@@ -1,0 +1,238 @@
+html,body {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#years_box img {width: 100%;}
+
+/* 45years_box */
+#years_box {
+	position: relative;
+	margin: 0 auto;
+	min-width: 1210px;
+}
+#years_box a{
+	position: absolute;
+	display: inline-block;
+	background:url(about:blank);
+	/*background-color: #e5e5e5;*/
+}
+#seckill a:hover,
+#limited a:hover,
+#sanitary a:hover,
+#ceramic a:hover,
+#box6 a:hover  {
+	-webkit-box-shadow:inset 0px 0px 5px 0px rgba(165,165,165,0.7),0px 0px 15px 0px rgba(165,165,165,0.7);
+	-moz-box-shadow:inset 0px 0px 5px 0px rgba(165,165,165,0.7),0px 0px 15px 0px rgba(165,165,165,0.7);
+	-ms-box-shadow:inset 0px 0px 5px 0px rgba(165,165,165,0.7),0px 0px 15px 0px rgba(165,165,165,0.7);
+	box-shadow:inset 0px 0px 5px 0px rgba(165,165,165,0.7),0px 0px 15px 0px rgba(165,165,165,0.7);
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+} 
+#seckill,
+#limited,
+#sanitary,
+#ceramic,
+#box6 {
+	position: relative;
+	width: 100%;
+}
+
+/*4112*/
+.saniA {width: 59.375%;height: 14.10505%;}
+.saniB {width: 14.1%;height: 1.896887%;}
+.saniC {width: 28.64583%;height: 14.202334%;}
+
+.sani1 {left: 20.3125%;top: 23.1517%;}
+.sani2 {left: 20.3125%;top: 38.47276%;}
+.sani3 {left: 42.984791%;top: 54.1685%;}
+.sani4 {left: 20.3125%;top: 80.95817%;}
+.sani5 {left: 51.0416%;top: 80.95817%;}
+.sani6 {left: 42.984791%;top: 96.3521%;}
+
+/*3167*/
+.ceraA {width: 10.15625%;height: 30.7407%;}
+
+.cera1 {left: 18.75%;top: 17.777%;}
+.cera2 {left: 71.3020%;top: 17.777%;}
+.cera3 {left: 18.75%;top: 53.0333%;}
+.cera4 {left: 71.3020%;top: 53.0333%;}
+.cera5 {
+	width: 40.625%;
+	height: 12.59259%;
+	left: 29.6875%;
+	top: 69.72222%;
+}
+.cera6 {
+	width: 18.2291%;
+	height: 8.51851%;
+	left: 40.88541%;
+	top: 87.87037%;
+}
+/*立即报名*/
+.liuzi {
+	width: 16.666%;
+	height: 6.8283%;
+	left: 41.6666%;
+	top: 50.8535%;
+}
+
+.free-reservation input,
+.free-reservation select {
+	position: absolute;
+	box-sizing: border-box;
+	border: none;
+	font-size: 16px;
+	background-color: transparent;
+	text-indent: 11px;
+	font-family: simhei;
+	color: #333;
+}
+.free-reservation select {text-indent: 7px;}
+
+/*您的姓名*/
+#pname {
+	left: 48.28125%;
+    top: 22.7323%;
+    width: 13.64583%;
+    height: 3.583426%;
+}
+/*您的电话*/
+#number {
+	left: 48.28125%;
+    top: 27.88353%;
+    width: 13.64583%;
+    height: 3.583426%;
+}
+/*省*/
+#province3 {
+	left: 48.28125%;
+	top: 33.034714%;
+	width: 5.3125%;
+    height: 3.583426%;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap; 
+}
+/*市*/
+#city3 {
+	left: 54.322916%;
+	top: 33.034714%;
+	width: 5.3125%;
+    height: 3.583426%;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap; 
+}
+/* 区 */
+#district3 {
+	left: 60.3645%;
+	top: 33.034714%;
+	width: 5.3125%;
+    height: 3.583426%;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap; 
+}
+/*期望选材*/
+input[type=checkbox] {
+    width: 1.1%;
+    height: 2.4%;
+    top: 38.8817%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #e58c0a;
+}
+input[type=checkbox]:checked {
+	background: url(../img/HouseAllocation/checked1.png) no-repeat 0 0;
+	background-size: cover;
+}
+
+.cizhuan {left: 48.2091%;}
+.jieju {left: 52.4091%;}
+.mudiban {left: 56.7091%;}
+.tuliao {left: 61.9091%;}
+
+/*品类*/
+.category {
+	left: 48.28125%;
+    top: 42.3292%;
+    width: 13.64583%;
+    height: 3.583426%;
+}
+/*预算*/
+.budget {
+	width: 8.64583%;
+	height: 3.583426%;
+	top: 47.4804%;
+	left: 48.28125%;
+}
+/*你的故事*/
+.story {
+	position: absolute;
+	width: 13.85416%;
+	height: 19.5968%;
+	left: 48.28125%;
+	top: 52.63157%;
+	font-size: 16px;
+	resize: none;
+	border: none;
+	padding: 5px 10px 5px 10px;
+	line-height: 1.3;
+	box-sizing: border-box;
+	background-color: transparent;
+}
+/*户型面积*/
+.area {
+	left: 48.28125%;
+	top: 73.79619%;
+    width: 13.64583%;
+    height: 3.583426%;
+}
+
+/*申请提交*/
+.one-sure {
+	position: absolute;
+    top: 84.322508%;
+    left: 53.0729%;
+    width: 12.5%;
+    height: 4.479283%;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	padding-top: 0.8%;
+	letter-spacing: 2px;
+}
+
+/*rightnav*/
+.rightnav {
+	position: fixed;
+	right: 10px;
+	top: 200px;
+	display: none;
+}
+
+.nav {position: absolute; width: 100%; height: 45px;left: 0;}
+.nav1 {top: 0px;}
+.nav2 {top: 59px;}
+.nav3 {top: 118px;}
+.nav4 {top: 175px;}
+.nav5 {top: 232px;}
+.backtop {
+	position: absolute;
+	width: 94px;
+	height: 94px;
+	border-radius: 50%;
+	display: inline-block;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	cursor: pointer;
+	/*background-color: #e5e5e5;*/
+}

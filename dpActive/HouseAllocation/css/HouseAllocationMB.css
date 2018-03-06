@@ -1,0 +1,409 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+ol,ul,li {list-style: none;}
+img {border: 0;vertical-align: middle;width: 100%;}
+a{text-decoration: none;color: #000;}
+input,select,textarea{outline: 0;}
+strong,var,em,i,u{font-weight: normal;font-style: normal;}
+body {font: 16px simhei, "Arial Narrow", HELVETICA;}
+.clearfix {zoom: 1;}
+.clearfix:after{
+	display: block;
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+}
+html,body {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/*reset*/
+#Years_box {
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto 96px;
+	/*padding-bottom: 100px;*/
+}
+/*#succBox {
+	width: 100%;
+	max-width: 640px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 101;
+	display: none;
+}*/
+/*预约成功弹出框*/
+#succBox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: rgba(0,0,0,0.7);
+	height: 100%;
+	display: none;
+	z-index: 101;
+}
+.imgbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 468px;
+	height: 650px;
+	cursor: pointer;
+}
+
+.box{
+	position: relative;
+}
+/*免费预约*/
+/*我要预约锚点*/
+#Anchor {
+	position: absolute;
+	top:1730px;
+	color: transparent;
+}
+.free-reservation input,
+.free-reservation select {
+	box-sizing: border-box;
+	border: none;
+	font-size: 20px;
+	background-color: transparent;
+  	text-indent: 10px;
+  	font-family: simhei;
+  	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+  	color: #666;
+}
+.free-reservation textarea{
+	outline: none;
+	color: #666;
+	border: none;
+	resize: none;
+}
+.free-reservation input::-webkit-input-placeholder{color:#666;}
+.free-reservation input:-moz-placeholder{color:#666;}
+.free-reservation input::-moz-placeholder{color:#666;}
+.free-reservation input:-ms-input-placeholder{color:#666;}
+
+.free-reservation select::-webkit-input-placeholder{color:#666;}
+.free-reservation select:-moz-placeholder{color:#666;}
+.free-reservation select::-moz-placeholder{color:#666;}
+.free-reservation select:-ms-input-placeholder{color:#666;}
+
+.free-reservation textarea::-webkit-input-placeholder{color:#666;}
+.free-reservation textarea:-moz-placeholder{color:#666;}
+.free-reservation textarea::-moz-placeholder{color:#666;}
+.free-reservation textarea:-ms-input-placeholder{color:#666;}
+
+/*您的姓名*/
+#pname {
+    position: absolute;
+    top: 1783px;
+    left: 176px;
+    width:296px;
+    height:50px;
+   	/*background-color: #FDD08F;*/
+   	font-size: 20px;
+}
+/*您的电话*/
+#number {
+    position: absolute;
+    top: 1890px;
+    left: 176px;
+    width:296px;
+    height:50px;
+   	/*background-color: #D8D8D8;*/
+}
+/*省*/
+#province3 {
+    position: absolute;
+    top: 1995px;
+    left: 176px;
+    width:115px;
+    height:51px;
+   	/*background-color: #D8D8D8;*/
+}
+/*市*/
+#city3 {
+    position: absolute;
+   	top: 1995px;
+    left: 304px;
+    width:115px;
+    height:51px;
+   	/*background-color: #D8D8D8;*/
+}
+/*区*/
+#district3 {
+    position: absolute;
+    top: 1995px;
+    left: 432px;
+    width:115px;
+    height:51px;
+   	/*background-color: #D8D8D8;*/
+   	/*border: 1px solid;*/
+}
+/*期望选材*/
+.ExpectedSelection{
+	position: absolute;
+	top: 2083px;
+	left: 174px;
+	/*height: 50px;*/
+	padding: 10px 0;
+	width: 420px;
+	/*background: #FED597;*/	
+}
+.ExpectedSelection label span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 20px;
+	margin-left: 2px;
+	margin-right: 8px;
+	margin-top: 3px;
+	color: #666;
+}
+.ExpectedSelection label input{
+	vertical-align: middle;
+}
+input[type=checkbox]{
+	width: 30px;
+    height: 30px;
+	border: 1px solid #E58C0A;
+	background: #FFD79E;
+}
+input[type=checkbox]:checked{
+	width: 30px;
+    height: 30px;
+	border: 1px solid #E58C0A;
+	background:#FFD79E url(../img/HouseAllocationMB/checked.png) no-repeat;
+	background-position: center center;
+	background-size: 26px;
+}
+/*其它 品类*/
+#otherClass {
+    position: absolute;
+    top: 2161px;
+	left: 176px;
+    width:296px;
+    height:50px;
+   	/*background-color: #D8D8D8;*/
+}
+/*您的预算*/
+#YourBudget{
+	position: absolute;
+    top: 2267px;
+	left: 176px;
+    width:172px;
+    height:50px;
+   	/*background-color: #D8D8D8;*/
+   	
+}
+/*您的故事*/
+#YourStory{
+	position: absolute;
+    top: 2372px;
+	left: 176px;
+    width:310px;
+    height:84px;
+   	/*background-color: #D8D8D8;*/
+   	padding:10px;
+   	font-size: 20px;
+   	font-family: simhei;
+   	background: transparent;
+}
+/*户型面积*/
+#UnitArea{
+	position: absolute;
+    top: 2533px;
+	left: 176px;
+    width:296px;
+    height:50px;
+   	/*background-color: #D8D8D8;*/
+}
+/*我要领砖*/
+.one-sure {
+    position: absolute;
+    top: 2634px;
+    left: 200px;
+    width: 240px;
+    height: 45px;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+   	/*background-color: #e5e5e5;*/
+}
+.box1_3 a.item1{
+	display: block;
+	position: absolute;
+	/*background: #e5e5e5;*/
+	width: 602px;
+	height: 650px;
+}
+.box1_3 a.a1{
+	top: 690px;
+	left: 18px;
+}
+.box1_3 a.a2{
+	top:1372px;
+	left: 18px;
+}
+.talk-a1{
+	display: block;
+	position: absolute;
+	top: 2054px;
+	left: 174px;
+	/*background: #e5e5e5;*/
+	width: 292px;
+	height: 78px;
+	/*border: 1px solid;*/
+}
+.talk-a2{
+	display: block;
+	position: absolute;
+	top: 1312px;
+	left: 174px;
+	/*background: #e5e5e5;*/
+	width: 292px;
+	height: 78px;
+	/*border: 1px solid;*/
+}
+.talk-a3{
+	display: block;
+	position: absolute;
+	top: 2750px;
+	left: 19px;
+	/*background: #e5e5e5;*/
+	width: 601px;
+	height: 145px;
+	/*border: 1px solid;*/
+}
+.box1_4 a.item1{
+	display: block;
+	position: absolute;
+	/*background: #e5e5e5;*/
+	width: 292px;
+	height: 426px;
+}
+.box1_4 a.a1{
+	top: 853px;
+	left: 19px;
+}
+.box1_4 a.a2{
+	top: 853px;
+	right: 19px;
+}
+.box1_4 a.item2{
+	display: block;
+	position: absolute;
+	/*background: #e5e5e5;*/
+	width: 292px;
+	height: 338px;
+}
+
+.box1_4 a.a3{
+	top: 1648px;
+	left: 19px;
+}
+.box1_4 a.a4{
+	top: 1648px;
+	right: 19px;
+}
+.box1_4 a.a5{
+	top: 2410px;
+	left: 19px;
+}
+.box1_4 a.a6{
+	top: 2410px;
+	right: 19px;
+}
+.order1{
+	display: block;
+	position: absolute;
+	top: 2935px;
+	left: 144px;
+	/*background: #e5e5e5;*/
+	width: 350px;
+	height: 92px;
+}
+.order2{
+	display: block;
+	position: absolute;
+	top: 682px;
+	left: 144px;
+	/*background: #e5e5e5;*/
+	width: 350px;
+	height: 92px;
+}
+
+
+#mbfoot {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	min-width: 320px;
+	max-width: 640px;
+	height: 100px;
+	background: #E5014E;
+}
+#mbfoot a{
+	display: inline-block;
+	float: left;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+}
+#mbfoot a p{
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+#mbfoot a span{
+	display: block;
+	margin: 8px auto 5px;
+	width: 55px;
+	height: 55px;
+	/*border: 1px solid;*/
+	background: url(../img/HouseAllocationMB/icon-white.png) no-repeat;
+	
+}
+#mbfoot a span.f-icon1{
+	background-position: -20px -7px;
+}
+#mbfoot a span.f-icon2{
+	background-position: -168px -7px;
+}
+#mbfoot a span.f-icon3{
+	background-position: -320px -7px;
+}
+#mbfoot a span.f-icon4{
+	background-position: -468px -7px;
+}
+#mbfoot a.active span{
+	background:url(../img/HouseAllocationMB/icon-yellow.png) no-repeat;
+}
+#mbfoot a.active span.f-icon1{
+	background-position: -20px -6px;
+}
+#mbfoot a.active span.f-icon2{
+	background-position: -168px -6px;
+}
+#mbfoot a.active span.f-icon3{
+	background-position: -320px -6px;
+}
+#mbfoot a.active span.f-icon4{
+	background-position: -468px -6px;
+}

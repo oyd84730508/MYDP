@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--通知 IE 采用其所支持的最新的模式-->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>宅优配</title>
+		<link rel="stylesheet" type="text/css" href="css/initialize.css" />
+		<link rel="stylesheet" type="text/css" href="css/common-active.css"/>
+		<link rel="stylesheet" type="text/css" href="css/HouseAllocation.css"/>
+		<script type="text/javascript">
+		    var _hmt = _hmt || [];
+		    (function()
+		    	{ 
+		    		var hm = document.createElement("script"); 
+		    		 hm.src = "https://hm.baidu.com/hm.js?2b6dcf042f4d2d8f50bcb8afd9cc3f87";
+		    		var s = document.getElementsByTagName("script")[0]; 
+		    		s.parentNode.insertBefore(hm, s); 
+		    	}
+		    )();
+		</script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header">
+			<div class="head_nav clearfix">
+				<ul class="Hnav_posi"><span>当前城市：</span><span id="cityIndex">佛山市</span><i></i></ul>
+				<ul class="Hnav_left clearfix">
+					<li><a href="https://mall.dongpeng.net/" class="bl" target="_blank">东鹏商城</a></li>
+					<li class="DP_group">
+						<a href="javascript:void(0)">东鹏集团<i class="TrangleD"></i></a>
+						<div class="DP_group_list">
+							<em class="Trangle"></em>
+							<span><a href="http://www.dongpeng.net/" target="_blank">东鹏瓷砖</a></span>
+							<span><a href="http://www.dongpengjieju.com/" target="_blank">东鹏洁具</a></span>
+							<span><a href="http://www.dongpengfloor.net/" target="_blank">东鹏木地板</a></span>
+							<span><a href="http://www.dongpengkeji.net/" target="_blank">东鹏绿家</a></span>
+							<span><a href="http://www.dpo2o.com/" target="_blank">东鹏家居</a></span>
+							<span><a href="http://www.innoci.com.cn/" target="_blank">innoci艺耐</a></span>
+							<span><a href="http://www.dpicn.net/" target="_blank">DPI进口瓷砖馆</a></span>
+						</div>
+					</li>
+					<li><a href="http://www.dongpeng.net/product/index_13.aspx?all=1" target="_blank">产品说明</a></li>
+					<li><a href="https://mall.dongpeng.net/store/index" target="_blank">实体门店</a></li>
+					<li><a href="http://www.dongpeng.com/" target="_blank">国际版</a></li>
+					<li><a href="https://mall.dongpeng.net/enterpriseProcurement" target="_blank">企业采购</a></li>
+					<li><a href="https://mall.dongpeng.net/dealer"  >DPIC(云鹏汇)</a></li>
+					<li class="noAfter"><a href="https://www.dpmall.com/dpstatic/active/HelpSellTreasure/HelpSellTreasure.html" target="_blank" >助销宝下载</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--导航栏-->
+		<div id="nav" class="clearfix">
+			<div class="nav_box clearfix">
+				<!--<div class="logo"><img src="img/commonImg/logo.jpg"/></div>-->
+				<div class="gifImg"><img src="img/commonImg/LOGO.png"/></div>
+				<ul class="nav_list">
+					<li><a href="https://mall.dongpeng.net" style="color: #D21E2F;">首页</a></li>
+					<li><a href="https://mall.dongpeng.net/modelhouse/list" target="_blank">样板房</a></li>
+					<li><a href="https://mall.dongpeng.net/material/index" target="_blank">建材馆</a></li>
+					<li><a href="https://mall.dongpeng.net/groupPurchase/index" target="_blank">东鹏团购</a></li>
+					<li><a href="https://mall.dongpeng.net/designer/designerTeam" target="_blank">找设计师</a></li>
+					<li><a href="https://mall.dongpeng.net/decrationTeam/index" target="_blank">找施工队</a></li>
+					<li><a href="https://mall.dongpeng.net/deknowledge/index" target="_blank">装修知识</a></li>
+					<li><a href="https://mall.dongpeng.net/newproducts/index" target="_blank">新品频道</a></li>
+				</ul>
+				<form class="search" action="https://www.dpmall.com/search/" method="get">
+					<label>
+						<input type="text" name="text" placeholder="瓷砖"/>
+						<input type="submit" class="sbtn" value=""/>
+					</label>
+				</form>
+			</div>
+		</div>
+
+		<div id="years_box">
+			<!--头部大图-->
+			<div id="head">
+				<img src="img/HouseAllocation/HouseAllocation1.jpg"/>
+			</div>
+			
+			<div id="seckill">
+				<img src="img/HouseAllocation/HouseAllocation2.jpg"/>
+				<!--免费预约输入框-->
+				<div class="free-reservation" id="freeReser">
+					<input type="text" name="source" id="source" value="rapidspread" hidden="hidden" style="display: none;">
+					<input type="text" placeholder="您的姓名" id="pname" name="name" maxlength="10"/>
+					<input type="text" placeholder="您的电话" id="number" name="callNumber"/>
+					<div data-toggle="distpicker" id="distpicker1">
+			           	<div class="form-group">
+			          		<select class="form-control" id="province3" data-province=""></select>
+			        	</div>
+				        <div class="form-group">
+				          	<select class="form-control" id="city3" data-city=""></select>
+				        </div>
+				        <div class="form-group">
+				          <select class="form-control" id="district3" data-district=""></select>
+				        </div>
+			      	</div>
+			      	
+			      	<input type="checkbox" name="checkbox" class="cizhuan" value="瓷砖" />
+			      	<input type="checkbox" name="checkbox" class="jieju" value="洁具" />
+			      	<input type="checkbox" name="checkbox" class="mudiban" value="木地板" />
+			      	<input type="checkbox" name="checkbox" class="tuliao" value="涂料" />
+			      	<input type="text" placeholder="其他品类" class="category" name="category" maxlength="10"/>
+			      	
+			      	<select class="budget">
+			      		<option value="1000以下">1000以下</option>
+			      		<option value="1001-3000">1001-3000</option>
+			      		<option value="3001-5000">3001-5000</option>
+			      		<option value="5001-7000">5001-7000</option>
+			      		<option value="7001-10000">7001-10000</option>
+			      		<option value="10001-15000">10001-15000</option>
+			      		<option value="15001-20000">15001-20000</option>
+			      		<option value="20000以上">20000以上</option>
+			      	</select>
+			      	<textarea class="story" placeholder="选材有困难？限量10名，材料任选，价格你定（最低五折）" maxlength="100"></textarea>
+		      		<input type="text" placeholder="户型面积？" class="area" name="area" maxlength="10"/>
+			      	<span class="one-sure"></span>
+				</div>
+			</div>
+			
+			<div id="limited">
+				<img data-srcywc="img/HouseAllocation/HouseAllocation3.jpg"/>
+			</div>
+			
+			<div id="sanitary">
+				<img data-srcywc="img/HouseAllocation/HouseAllocation4.jpg"/>
+				<a class="saniA sani1" href="https://www.dpmall.com/**/p/800EFG50002_A" target="_blank"></a>
+				<a class="saniA sani2" href="https://www.dpmall.com/**/p/MJG08300101_A" target="_blank"></a>
+				<a class="saniB sani3" href="javascript:void(0)" onclick="NTKF.im_openInPageChat('kf_10058_1508982217322')"></a>
+				<a class="saniC sani4" href="https://www.dpmall.com/**/p/800EFG13001_A" target="_blank"></a>
+				<a class="saniC sani5" href="https://www.dpmall.com/**/p/HF965031_A" target="_blank"></a>
+				<a class="saniB sani6" href="javascript:void(0)" onclick="NTKF.im_openInPageChat('kf_10058_1508982217322')"></a>
+			</div>
+			
+			<div id="ceramic">
+				<img data-srcywc="img/HouseAllocation/HouseAllocation5.jpg"/>
+				<a class="ceraA cera1" href="https://www.dpmall.com/**/p/JJH1811DW" target="_blank"></a>
+				<a class="ceraA cera2" href="https://www.dpmall.com/**/p/W094105FS" target="_blank"></a>
+				<a class="ceraA cera3" href="https://www.dpmall.com/**/p/JG0040802T2" target="_blank"></a>
+				<a class="ceraA cera4" href="https://www.dpmall.com/**/p/JJH2079X" target="_blank"></a>
+				<a class="cera5" href="JavaScript:void(0)" onclick="NTKF.im_openInPageChat('kf_10058_1508982217322')"></a>
+				<a class="cera6" href="JavaScript:void(0)"></a>
+			</div>
+			
+			<div id="box6">
+				<img data-srcywc="img/HouseAllocation/HouseAllocation6.jpg"/>
+				<a class="liuzi" href="JavaScript:void(0)"></a>
+			</div>
+			
+			<!--右悬浮nav-->
+			<div class="rightnav">
+				<img src="img/HouseAllocation/rightnav.png"/>
+				<a class="nav nav1" href="javascript:void(0)"></a>
+				<a class="nav nav2" href="javascript:void(0)"></a>
+				<a class="nav nav3" href="javascript:void(0)"></a>
+				<a class="nav nav4" href="javascript:void(0)"></a>
+				<a class="nav nav5" href="javascript:void(0)"></a>
+				<span class="backtop"></span>
+			</div>
+			<!--预约成功-->
+			<!--<div class="succbox">
+				<div class="imgbox">
+				<img src="img/HouseAllocation/success1.jpg"/>
+				</div>
+			</div>-->
+		</div>
+		
+		<!--底部-->
+		<div class="footer">
+			<div class="footer-box">
+				<div class="foot-up">
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer1.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">知名品牌</p>
+							<p class="txt-p2">选我准没错的</p>
+						</div>
+					</div>	
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer2.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">始于1972年</p>
+							<p class="txt-p2">精益求精好品质</p>
+						</div>
+					</div>
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer3.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">品质保证</p>
+							<p class="txt-p2">严格工艺把控</p>
+						</div>
+					</div>
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer4.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">环保材料</p>
+							<p class="txt-p2">精选每一处用料</p>
+						</div>
+					</div>
+					<div class="up-div margin-none">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer5.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">客服电话</p>
+							<p class="txt-p2 txt-num">0757-82663173</p>
+						</div>
+					</div>
+				</div>
+				<div class="foot-mid">
+					<dl>
+						<dt>关于东鹏</dt>
+						<dd><a href="http://www.dongpeng.net/DongPeng/index_35.aspx" target="_blank">公司简介</a></dd>
+						<dd><a href="http://www.dongpeng.net/DongPeng/index_36.aspx" target="_blank">企业文化</a></dd>
+						<dd><a href="http://www.dongpeng.net/DongPeng/index_32.aspx" target="_blank">品牌实力</a></dd>
+						<dd><a href="http://www.dongpeng.net/news/list_44.aspx" target="_blank">新闻中心</a></dd>
+					</dl>
+					<dl>
+						<dt>购物指南</dt>
+						<dd><a href="https://mall.dongpeng.net/dongpeng/zh/helpcenter/index0" target="_blank">购物流程</a></dd>
+						<dd><a href="https://mall.dongpeng.net/dongpeng/zh/groupPurchase/index" target="_blank">优惠活动</a></dd>
+						<dd><a href="https://mall.dongpeng.net/dongpeng/zh/helpcenter/index3" target="_blank">售后服务</a></dd>
+						<dd><a href="https://mall.dongpeng.net/dongpeng/zh/helpcenter/index2" target="_blank">常见问题</a></dd>
+					</dl>
+					<dl>
+						<dt>装修知识</dt>
+						<dd><a href="https://mall.dongpeng.net/deknowledge/encyclopedia" target="_blank">安装视频</a></dd>
+						<dd><a href="https://mall.dongpeng.net/material/index###" target="_blank">教你选材</a></dd>
+						<dd><a href="https://mall.dongpeng.net/dongpeng/zh/modelhouse/list" target="_blank">精选案例</a></dd>
+						<dd><a href="https://mall.dongpeng.net/dongpeng/zh/decorationprocess/index" target="_blank">装修流程</a></dd>
+					</dl>
+					<dl>
+						<dt>购物商城</dt>
+						<dd><a href="https://dongpengcz.tmall.com/?spm=a1z10.1-b-s.1997427721.d4918089.JQOWW0" target="_blank">瓷砖天猫店</a></dd>
+						<dd><a href="https://dongpengjj.tmall.com/shop/view_shop.htm?spm=a1z10.3-b-s.w5001-15954254335.4.4YrvN0&mytmenu=mdianpu&utkn=g%2Cw2v4l5f54c7n7oozw664n3f5uk26u1488278511131&user_number_id=865365708&scm=1028.1.1.20001&scene=taobao_shop" target="_blank">洁具天猫店</a></dd>
+						<dd><a href="https://mall.jd.com/index-75728.html" target="_blank">京东商城</a></dd>
+						<dd><a href="http://brand.vip.com/dongpeng/" target="_blank">DP唯品会</a></dd>
+					</dl>
+					<dl class="margin-none">
+						<dt>关注我们</dt>
+						<dd class="foot-dd"><a href="javascript:void(0)">微信公众号</a><img src="img/commonImg/w-code4.jpg"/></dd>
+						<dd class="foot-dd"><a href="javascript:void(0)">微信商城</a><img src="img/commonImg/w-code3.jpg"/></dd>
+						<dd><a href="http://weibo.com/dongpengcizhuan?refer_flag=1001030102_&is_all=1" target="_blank">瓷砖微博</a></dd>
+						<dd><a href="https://www.dpmall.com/dpstatic/active/HelpSellTreasure/HelpSellTreasure.html" target="_blank">助销宝下载</a></dd>
+					</dl>
+				</div>
+				<div class="foot-down">
+					<p class="down-p1">
+						<span>友情链接：</span>
+						<a href="http://www.dongpeng.net/" target="_blank">东鹏陶瓷</a> |
+						<a href="http://www.dongpengjieju.com/" target="_blank">东鹏洁具</a> |
+						<a href="http://www.dongpengkeji.net/product.php?nid=9&sid=9" target="_blank">东鹏硅藻泥</a> |
+						<a href="http://www.dongpengfloor.net/" target="_blank">东鹏木地板</a> |
+						<a href="http://www.dongpengkeji.net/" target="_blank">东鹏绿家科技</a> |
+						<a href="http://www.innoci.com.cn/" target="_blank">innoci洁具</a> |
+						<a href="http://www.dpicn.net/" target="_blank">PDI进口瓷砖馆</a> |
+						<a href="http://www.dongpeng.net/news/info_44.aspx?itemid=1836" target="_blank">新年特训</a> |
+						<a href="http://www.dongpeng.net/product/list_13.aspx?cid=171" target="_blank">东鹏原石</a> |
+						<a href="http://www.eccc.com.cn/" target="_blank">中国陶瓷城</a> |
+						<a href="http://www.umeng.com/" target="_blank">友盟</a> |
+						<a href="https://www.patrick-wied.at/" target="_blank">heatmap</a> |
+						<a href="http://www.baidu.com.cn/" target="_blank">百度</a> |
+						<a href="###" class="foot-more" >更多></a>
+					</p>
+					
+					<p class="down-p2">
+						<a href="javascript:void(0)" target="_blank">关于我们</a> |
+						<a href="javascript:void(0)" target="_blank">联系我们</a> |
+						<a href="http://www.dongpeng.net/job/index_67.aspx" target="_blank">诚聘英才</a> |
+						<a href="https://mall.dongpeng.net/dongpeng/zh/enterpriseProcurement" target="_blank">企业采购</a> |
+						<a href="https://mall.dongpeng.net/dongpengOMS/dongpeng/zh/zhuxiao/login?error=true" target="_blank">招商加盟</a> |
+						<a href="https://mall.dongpeng.net/dongpengOMS/dongpeng/zh/zhuxiao/login?error=true" target="_blank">设计师入驻</a> |
+						<a href="https://mall.dongpeng.net/dongpengOMS/dongpeng/zh/zhuxiao/login?error=true" target="_blank">施工队入驻</a> |
+						<a href="https://mall.dongpeng.net/dongpeng/zh/helpcenter/index0" target="_blank">帮助中心</a>
+					</p>
+					<p>广东东鹏控股股份有限公司©版权所有 保留所有权利 </p>
+					<p style="margin-top:15px">粤ICP备13087549号-3</p>
+					<p style="margin: 15px auto">
+						<a><script src="https://kxlogo.knet.cn/seallogo.dll?sn=e17091844060068926g25w000000&size=0"></script></a>
+						<a  key ="599fe8602548be7568b71164"  logo_size="124x47"  logo_type="business"  href="http://www.anquan.org" ><script src="//static.anquan.org/static/outer/js/aq_auth.js"></script></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common-active.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/distpicker.data.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/distpicker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/HouseAllocation.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
