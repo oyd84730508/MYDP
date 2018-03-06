@@ -1,0 +1,270 @@
+html,body {
+	font-size: 0.12rem; 
+	font-family: simhei;
+	/*background-color: #eee;*/
+}
+a {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	-webkit-tap-highlight-color:transparent
+}
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill { 
+       -webkit-box-shadow: 0 0 0 1000px white inset; 
+}
+/*input[type=text]:focus, input[type=password]:focus, textarea:focus {
+      -webkit-box-shadow: 0 0 0 1000px white inset; 
+}*/
+#mbBox {
+	position: relative;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto 1rem;
+}
+.w{
+	position: relative;
+}
+.w img{
+	width: 100%;
+}
+.w a{
+	display:block;
+}
+.free-reservation input,
+.free-reservation select {
+	position: absolute;
+	box-sizing: border-box;
+	border: none;
+	font-size: 0.24rem;
+	background-color: transparent;
+	font-family: simhei;
+	color: #fff;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.free-reservation select option{
+	color: #666;
+}
+.free-reservation input::-webkit-input-placeholder{color:#666;}
+.free-reservation input:-moz-placeholder{color:#666;}
+.free-reservation input::-moz-placeholder{color:#666;}
+.free-reservation input:-ms-input-placeholder{color:#666;}
+
+.free-reservation select::-webkit-input-placeholder{color:#666;}
+.free-reservation select:-moz-placeholder{color:#666;}
+.free-reservation select::-moz-placeholder{color:#666;}
+.free-reservation select:-ms-input-placeholder{color:#666;}
+/*您的姓名*/
+#pname1 {
+    width: 4.4rem;
+    height: 0.56rem;
+    left: 1.5rem;
+    top: 1.34rem;
+    /*background: #01A1FF;*/
+    color: #666;
+    font-size: 0.26rem;
+}
+/*您的电话*/
+#number1 {
+    width: 4.4rem;
+    height: 0.56rem;
+    left: 1.5rem;
+    top: 2.41rem;
+    /*background: #01A1FF;*/
+    color: #666;
+    font-size: 0.26rem;
+}
+/*省*/
+#province1 {
+    width: 1.3rem;
+    height: 0.56rem;
+    left: 1.42rem;
+    top: 3.48rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-indent: 0.1rem;
+    /*background: #01A1FF;*/
+    /* border-radius: 1rem; */
+    color: #666;
+    font-size: 0.26rem;
+}
+/*市*/
+#city1 {
+    width: 1.3rem;
+    height: 0.56rem;
+    left:3.03rem;
+    top: 3.48rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap;
+	text-indent: 0.1rem;  
+	/*background: #01A1FF;*/
+	/*border-radius: 1rem;*/
+	color: #666;
+	font-size: 0.26rem;
+}
+/* 区 */
+#district1 {
+    width: 1.3rem;
+    height: 0.56rem;
+    left: 4.65rem;
+    top: 3.48rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap;
+	text-indent: 0.1rem;  
+	/*background: #01A1FF;*/
+	/*border-radius: 1rem;*/
+	color: #666;
+	font-size: 0.26rem;
+}
+
+.one-sure1 {
+    position: absolute;
+	top: 4.5rem;
+    left: 1.7rem;
+    width: 3.2rem;
+    height: 0.75rem;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 1rem;
+    /* background: #ccc; */
+}
+/*底部导航*/
+.tabbar {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+	z-index: 9999;
+}
+.tabbar img{
+	width: 100%;
+}
+.tabbar a{
+	position: absolute;
+	top: 0;
+	width: 25%;
+	height: 100%;
+}
+.bot1 {left: 0;}
+.bot2 {left: 25%;}
+.bot3 {left: 50%;}
+.bot4 {left: 75%;}
+/*预约成功页面*/
+.successBox a{display: block;}
+.successBox img {
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    -webkit-transform: translate3d(-50%,-50%,0);
+}
+.pd-link1,.pd-link2{
+	position: absolute;
+	top: 4.6rem;
+	display: block;
+	width: 3rem;
+	height: 5.4rem;
+	/*border: 1px solid;*/
+}
+.pd-link1{
+	left: 0.1rem;
+}
+.pd-link2{
+	right: 0.1rem;
+}
+.makeSure{
+	position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    width: 2rem;
+    height: 0.5rem;
+    /*border: 1px solid;*/
+}
+.LinkMainMB{
+    position: absolute;
+    top: 3.8rem;
+    left: 0.5rem;
+    display: block;
+    width: 5.35rem;
+    height: 0.7rem;
+}
+
+/*gif图片*/
+.w img.gif1{
+	position: absolute;
+	top: 0.17rem;
+	left: 0.37rem;
+	width: 4.16rem;
+	height: 2.48rem;
+}
+.w img.gif2{
+	position: absolute;
+	top: 0.13rem;
+	left: 0.37rem;
+	width: 4.16rem;
+	height: 2.48rem;
+}
+.w img.gif3{
+	position: absolute;
+	top: 0.13rem;
+	left: 0.37rem;
+	width: 4.16rem;
+	height: 2.48rem;
+}
+/**/
+.productLink {
+    position: absolute;
+    top: 0;
+    left: 0.1rem;
+    width: 3.8rem;
+    height: 100%;
+}
+.kfLink {
+    position: absolute;
+    top: 0;
+    right: 0.1rem;
+    width: 2.4rem;
+    height: 100%;
+}
+.typeA div:nth-of-type(2n+1) {
+    left: 0;
+}
+.typeA div:nth-of-type(2n) {
+    right: 0;
+}
+.typeA div{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+.typeA div a{
+	position: absolute;
+	height: 4.2rem;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.typeA div p{
+	position: absolute;
+	height: 0.8rem;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}

@@ -1,0 +1,301 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+ol,ul,li {list-style: none;}
+img {border: 0;vertical-align: middle;width: 100%;}
+a{text-decoration: none;color: #000;}
+input,select,textarea{outline: 0;}
+strong,var,em,i,u{font-weight: normal;font-style: normal;}
+body {font: 16px simhei, "Arial Narrow", HELVETICA;}
+.clearfix {zoom: 1;}
+.clearfix:after{
+	display: block;
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+}
+html,body {
+	font-size: 0.12rem; 
+	font-family: simhei;
+}
+
+a {
+	position: absolute;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	-webkit-tap-highlight-color:transparent;
+}
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill { 
+       -webkit-box-shadow: 0 0 0 1000px transparent inset; 
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+      -webkit-box-shadow: 0 0 0 1000px transparent inset; 
+}
+
+.mbBox {
+	position: relative;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto 0.1rem;
+}
+
+.anchor {
+	width: 100%;
+	height: 0.001rem;
+	top: 3rem;
+	left: 0;
+}
+
+.free-reservation input,
+.free-reservation select {
+	position: absolute;
+	box-sizing: border-box;
+	border: none;
+	font-size: 0.24rem;
+	background-color: transparent;
+	text-indent: 0.11rem;
+	font-family: simhei;
+	color: #333;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/*您的姓名*/
+#pname {
+	width: 4rem;
+	height: 0.62rem;
+	left: 1.77rem;
+	top: 4.51rem;
+}
+/*您的电话*/
+#number {
+	width: 4rem;
+	height: 0.62rem;
+	left: 1.77rem;
+	top: 5.41rem;
+}
+/*省*/
+#province3 {
+	width: 1.57rem;
+	height: 0.62rem;
+	left: 0.62rem;
+	top: 6.31rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap; 
+}
+/*市*/
+#city3 {
+	width: 1.57rem;
+	height: 0.62rem;
+	left: 2.41rem;
+	top: 6.31rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap; 
+}
+/* 区 */
+#district3 {
+	width: 1.57rem;
+	height: 0.62rem;
+	left: 4.2rem;
+	top: 6.31rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap; 
+}
+
+/*预算*/
+.budget {
+	width: 4rem;
+	height: 0.62rem;
+	left: 1.77rem;
+	top: 7.21rem;
+}
+
+.free-reservation label {
+	position: absolute;
+	display: inline-block;
+	width: 1.33rem;
+	height: 0.36rem;
+	top: 8.92rem;
+	background-color: transparent;
+	font-size: 0.24rem;
+	line-height: 0.36rem;
+	text-indent: 0.47rem;
+}
+
+label.cizhuan {left: 0.65rem;}
+label.jieju {left: 2.0rem;}
+label.mudiban {left: 3.35rem;}
+label.tuliao {left: 4.9rem;width: 1rem;}
+
+.one-sure {
+	position: absolute;
+    top: 9.61rem;
+    left: 0.6rem;
+    width: 5.2rem;
+    height: 0.75rem;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 1rem;
+	background-color: transparent;
+}
+
+/*期望选材*/
+input[type=checkbox] {
+	position: absolute;
+	left: 0;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url(../img/ZhaiYouPei1/checkedA.png) no-repeat 0 0;
+   background-size: cover;
+}
+input[type=checkbox]:checked {
+	background: url(../img/ZhaiYouPei1/checkedB.png) no-repeat 0 0;
+	background-size: cover;
+}
+
+
+
+.gotop {
+    width: 1.78rem;
+    height: 0.55rem;
+	background-color: transparent;
+	border-radius: 0.05rem;
+}
+.gotop1 {
+    left: 4.05rem;
+    top: 25.08rem;
+}
+.gotop2 {
+    left: 0.59rem;
+    top: 27.95rem;
+}
+.gotop3 {
+	left: 4.05rem;
+	top: 30.81rem;
+}
+
+.free-reservation1 input,
+.free-reservation1 select {
+	position: absolute;
+	box-sizing: border-box;
+	border: none;
+	font-size: 0.24rem;
+	background-color: transparent;
+	text-indent: 0.11rem;
+	font-family: simhei;
+	color: #333;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/*您的姓名*/
+#pname1 {
+	width: 4rem;
+	height: 0.62rem;
+	left: 1.77rem;
+	top: 41.76rem;
+}
+/*您的电话*/
+#number1 {
+	width: 4rem;
+	height: 0.62rem;
+	left: 1.77rem;
+	top: 42.66rem;
+}
+/*省*/
+#province1 {
+	width: 1.57rem;
+	height: 0.62rem;
+	left: 0.62rem;
+	top: 43.56rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap; 
+}
+/*市*/
+#city1 {
+	width: 1.57rem;
+	height: 0.62rem;
+	left: 2.41rem;
+	top: 43.56rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap; 
+}
+/* 区 */
+#district1 {
+	width: 1.57rem;
+	height: 0.62rem;
+	left: 4.2rem;
+	top: 43.56rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap; 
+}
+
+/*预算*/
+.budget1 {
+	width: 4rem;
+	height: 0.62rem;
+	left: 1.77rem;
+	top: 44.46rem;
+}
+
+.free-reservation1 label {
+	position: absolute;
+	display: inline-block;
+	width: 1.33rem;
+	height: 0.36rem;
+	top: 46.16rem;
+	background-color: transparent;
+	font-size: 0.24rem;
+	line-height: 0.36rem;
+	text-indent: 0.47rem;
+}
+
+label.cizhuan1 {left: 0.65rem;}
+label.jieju1 {left: 2.0rem;}
+label.mudiban1 {left: 3.35rem;}
+label.tuliao1 {left: 4.9rem;width: 1rem;}
+
+.one-sure1 {
+	position: absolute;
+    top: 46.86rem;
+    left: 0.6rem;
+    width: 5.2rem;
+    height: 0.75rem;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 1rem;
+	background-color: transparent;
+}
+
+
+
+/*预约成功弹出框*/
+.succbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	background-color: rgba(0,0,0,0.7);
+	height: 100%;
+	display: none;
+}
+.succbox img {
+	width: 100%;
+}
