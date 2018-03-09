@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--告诉设备忽略将页面中的数字识别为电话号码-->
+		<meta content="telephone=no" name="format-detection">
+		<!--百度站长统计 2017-07-28 -->
+		<meta name="baidu-site-verification" content="0h3zsldRex" />
+		<!--限制浏览器内核2017-10-12-->
+		<meta name="renderer" content="webkit">
+		<title>商品列表</title>
+		<link rel="stylesheet" type="text/css" href="css/initialize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/productList.css"/>
+	</head>
+	<body>
+		<!--顶部-->
+		<div id="shortcut">
+			<div class="w clearfix">
+				<ul class="w-fl clearfix">
+					<li><a href=""><i></i>东鹏商城首页</a></li>
+					<li id="location"><i></i><span></span></li>
+				</ul>
+				<ul class="w-fr clearfix">
+					<li class="fore2">
+						<a href="">注册</a>
+						<span>/</span>
+						<a href="">用户登录</a>
+					</li>
+					<li class="fore1"><a href="">我的订单</a></li>
+					<li class="fore1"><a href="">我的东鹏</a></li>
+					<li class="fore1"><a href="">联系客服</a></li>
+					<li class="fore3 DP_group">
+						<div class="">
+							东鹏集团
+						</div>
+						<div class="DP_group_list">
+							<em class="Trangle"></em>
+							<span><a href="http://www.dongpeng.net/" target="_blank">东鹏瓷砖</a></span>
+							<span><a href="http://www.dongpengjieju.com/" target="_blank">东鹏洁具</a></span>
+							<span><a href="http://www.dongpengfloor.net/" target="_blank">东鹏木地板</a></span>
+							<span><a href="http://www.dongpengkeji.net/" target="_blank">东鹏绿家</a></span>
+							<span><a href="http://www.innoci.com.cn/" target="_blank">innoci艺耐</a></span>
+							<span><a href="http://www.dpicn.net/" target="_blank">DPI进口瓷砖馆</a></span>
+						</div>
+					</li>
+					<li class="fore4">|</li>
+					<li class="fore5"><a href="/dealer" target="_blank">DPIC(云鹏汇)</a></li>
+					<li class="fore6"><a href="">助销宝下载</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--搜索模块-->
+		<div id="header">
+			<div class="w">
+				<div id="logo" class="logo">
+					<a href="" class="logo_tit_lk"><img src="img/public/DP_LOGO.png"/></a>
+				</div>
+				<div id="half_price"><a href=""><img src="img/public/half_price.png"/></a></div>
+				<div id="search" class="top_search">
+			        <div class="search-m">
+			          <div class="form">
+			            <input type="text" id="key"  class="text" placeholder="请输入您要搜索的关键词">
+			            <button class="button">搜索</button>
+			          </div>
+			        </div>
+			    </div>
+			    <div id="hotwords">
+			    	<a href="">全抛釉瓷砖</a>
+			    	<a href="">马桶</a>
+			    	<a href="">健康涂料</a>
+			    	<a href="">强化复合地板</a>
+			    	<a href="">进口瓷砖</a>
+			    </div>
+			    <div id="Dcart">
+			    	<a href="">购物车（<i>888</i>）</a>
+			    </div>
+			</div>
+		</div>
+		<div id="main-nav">
+			<div class="main-nav">
+				<div class="main-nav-inner">
+					<a href="">领券中心</a>
+					<a href="">秒杀</a>
+					<a href="">团购</a>
+					<a href="">门店</a>
+					<a href="">装修百科</a>
+					<a href="">晒家分享</a>
+					<a href="">东鹏品牌</a>
+					<a href="" class="zstq"><img src="img/public/zs_ico.png"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="category-con">
+			<!--侧栏分类-->
+			<div id="" class="category-inner-con">
+				<div class="category-type">
+					
+					<div class="classify">全部商品分类</div>
+				</div>
+				<div class="tab-content">
+					<div class="nav-con">
+						<ul class="normal-nav clearfix">
+							<li class="nav-item-0">
+								<i class=""></i>
+								<a href="">瓷砖</a>
+							
+							</li>
+							<li class="nav-item-1">
+								<i class=""></i>
+								<a href="">洁具</a>
+							
+							</li>
+							<li class="nav-item-2">
+								<i class=""></i>
+								<a href="">厨卫五金</a>
+								
+							</li>
+							<li class="nav-item-3">
+								<i class=""></i>
+								<a href="">木地板</a>
+								
+							</li>
+							<li class="nav-item-4">
+								<i class=""></i>
+								<a href="">基础建材</a>
+								
+							</li>
+							<li class="nav-item-5">
+								<i class=""></i>
+								<a href="">家居饰品</a>
+								
+							</li>
+							<li class="nav-item-6">
+								<i class=""></i>
+								<a href="">设计</a>
+								
+							</li>
+							<li class="nav-item-7">
+								<i class=""></i>
+								<a href="">装修</a>
+								
+							</li>
+							<li class="nav-item-8">
+								<i class=""></i>
+								<a href="">监理</a>
+								
+							</li>
+							<li class="nav-item-9">
+								<i class=""></i>
+								<a href="">安装</a>
+								
+							</li>
+							<li class="nav-item-10">
+								<i class=""></i>
+								<a href="">家居套餐</a>
+								
+							</li>
+							<li class="nav-item-11">
+								<i class=""></i>
+								<a href="">增值服务</a>
+								
+							</li>
+						</ul>
+					</div>
+					<div class="content-con">
+						<div class="pannel-con">
+							<div class="hot-word-con">
+								<div class="hot-word-line">
+									<div class="line-title">
+										<div class="title-text">
+											品类
+										</div>
+										<i class="fp-iconfont"></i>
+									</div>
+									<div class="line-con clearfix">
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+									
+										<div class="seprate"></div>
+									</div>
+								</div>
+								<div class="hot-word-line">
+									<div class="line-title">
+										<div class="title-text">
+											风格
+										</div>
+										<i class="fp-iconfont"></i>
+									</div>
+									<div class="line-con clearfix">
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+									
+										<div class="seprate"></div>
+									</div>
+								</div>
+								<div class="hot-word-line">
+									<div class="line-title">
+										<div class="title-text">
+											空间
+										</div>
+										<i class="fp-iconfont"></i>
+									</div>
+									<div class="line-con clearfix">
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+									
+										<div class="seprate"></div>
+									</div>
+								</div>
+								<div class="hot-word-line prd-item-line">
+									<a class="prd-item" href="">
+										<div class="prd-item-tit">柳丝瓷片</div>
+										<div class="prd-item-price">
+											&yen;<span>888.00</span>
+										</div>
+										<div class="">
+											<img src="img/HomePageImgA/ybj001.jpg"/>
+										</div>
+									</a>
+									<a class="prd-item" href="">
+										<div class="prd-item-tit">柳丝瓷片</div>
+										<div class="prd-item-price">
+											&yen;<span>888.00</span>
+										</div>
+										<div class="">
+											<img src="img/HomePageImgA/ybj001.jpg"/>
+										</div>
+									</a>
+									<a class="prd-item" href="">
+										<div class="prd-item-tit">柳丝瓷片</div>
+										<div class="prd-item-price">
+											&yen;<span>888.00</span>
+										</div>
+										<div class="">
+											<img src="img/HomePageImgA/ybj001.jpg"/>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-con">
+							<div class="hot-word-con">
+								<div class="hot-word-line">
+									<div class="line-title">
+										<div class="title-text">
+											品类
+										</div>
+										<i class="fp-iconfont"></i>
+									</div>
+									<div class="line-con clearfix">
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+									
+										<div class="seprate"></div>
+									</div>
+								</div>
+								<div class="hot-word-line">
+									<div class="line-title">
+										<div class="title-text">
+											风格
+										</div>
+										<i class="fp-iconfont"></i>
+									</div>
+									<div class="line-con clearfix">
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+									
+										<div class="seprate"></div>
+									</div>
+								</div>
+								<div class="hot-word-line">
+									<div class="line-title">
+										<div class="title-text">
+											空间
+										</div>
+										<i class="fp-iconfont"></i>
+									</div>
+									<div class="line-con clearfix">
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+									
+										<div class="seprate"></div>
+									</div>
+								</div>
+								<div class="hot-word-line prd-item-line">
+									<a class="prd-item" href="">
+										<div class="prd-item-tit">柳丝瓷片</div>
+										<div class="prd-item-price">
+											&yen;<span>888.00</span>
+										</div>
+										<div class="">
+											<img src="img/HomePageImgA/ybj001.jpg"/>
+										</div>
+									</a>
+									<a class="prd-item" href="">
+										<div class="prd-item-tit">柳丝瓷片</div>
+										<div class="prd-item-price">
+											&yen;<span>888.00</span>
+										</div>
+										<div class="">
+											<img src="img/HomePageImgA/ybj001.jpg"/>
+										</div>
+									</a>
+									<a class="prd-item" href="">
+										<div class="prd-item-tit">柳丝瓷片</div>
+										<div class="prd-item-price">
+											&yen;<span>888.00</span>
+										</div>
+										<div class="">
+											<img src="img/HomePageImgA/ybj001.jpg"/>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-con">
+							<div class="hot-word-con">
+								<div class="hot-word-line">
+									<div class="line-title">
+										<div class="title-text">
+											品类
+										</div>
+										<i class="fp-iconfont"></i>
+									</div>
+									<div class="line-con clearfix">
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+									
+										<div class="seprate"></div>
+									</div>
+								</div>
+								<div class="hot-word-line">
+									<div class="line-title">
+										<div class="title-text">
+											风格
+										</div>
+										<i class="fp-iconfont"></i>
+									</div>
+									<div class="line-con clearfix">
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+									
+										<div class="seprate"></div>
+									</div>
+								</div>
+								<div class="hot-word-line">
+									<div class="line-title">
+										<div class="title-text">
+											空间
+										</div>
+										<i class="fp-iconfont"></i>
+									</div>
+									<div class="line-con clearfix">
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+										<a href="">玻化砖</a>
+									
+										<div class="seprate"></div>
+									</div>
+								</div>
+								<div class="hot-word-line prd-item-line">
+									<a class="prd-item" href="">
+										<div class="prd-item-tit">柳丝瓷片</div>
+										<div class="prd-item-price">
+											&yen;<span>888.00</span>
+										</div>
+										<div class="">
+											<img src="img/HomePageImgA/ybj001.jpg"/>
+										</div>
+									</a>
+									<a class="prd-item" href="">
+										<div class="prd-item-tit">柳丝瓷片</div>
+										<div class="prd-item-price">
+											&yen;<span>888.00</span>
+										</div>
+										<div class="">
+											<img src="img/HomePageImgA/ybj001.jpg"/>
+										</div>
+									</a>
+									<a class="prd-item" href="">
+										<div class="prd-item-tit">柳丝瓷片</div>
+										<div class="prd-item-price">
+											&yen;<span>888.00</span>
+										</div>
+										<div class="">
+											<img src="img/HomePageImgA/ybj001.jpg"/>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-con">
+							4
+						</div>
+						<div class="pannel-con">
+							5
+						</div>
+						<div class="pannel-con">
+							6
+						</div>
+						<div class="pannel-con">
+							7
+						</div>
+						<div class="pannel-con">
+							8
+						</div>
+						<div class="pannel-con">
+							9
+						</div>
+						<div class="pannel-con">
+							10
+						</div>
+						<div class="pannel-con">
+							11
+						</div>
+						<div class="pannel-con">
+							12
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="subnav_box">
+			<div class="nav_inner">
+				<div class="subnav">
+					<span><a href="javaScript:void(0)">主页</a> &gt;</span>
+					<span><a href="javaScript:void(0)">卫浴</a> &gt;</span>
+					<span><a href="javaScript:void(0)">坐便器</a> &gt;</span>
+					<span>w6021</span>
+				</div>
+			<!--	<a href="javaScript:void(0)" class="guide">需要导购服务？</a>-->
+			</div>
+		</div>	
+		<!--品类-->
+		<div id="cplb" class="w">
+			<div class="Multi-screening">
+				<ul class="select">
+					<li class="select-list">
+						<dl id="select1">
+							<dt class="MB-click" data-num="0"><span>品类</span></dt>
+							<div class="MB-selbox">
+								<div class="MB-sel">
+									<dd><a href="###">地中海</a></dd>
+									<dd><a href="###">田园</a></dd>
+									<dd><a href="###">欧式</a></dd>
+									<dd><a href="###">简欧</a></dd>
+									<dd><a href="###">新中式</a></dd>
+									<dd><a href="###">古典</a></dd>
+									<dd><a href="###">美式</a></dd>
+									<dd><a href="###">日式</a></dd>
+									<dd><a href="###">混搭</a></dd>
+									<dd><a href="###">党政</a></dd>
+									<dd><a href="###">田园</a></dd>
+									<dd><a href="###">欧式</a></dd>
+									<dd><a href="###">简欧</a></dd>
+									<dd><a href="###">新中式</a></dd>
+									<dd><a href="###">古典</a></dd>
+									<dd><a href="###">美式</a></dd>
+									<dd><a href="###">日式</a></dd>
+									<dd><a href="###">混搭</a></dd>
+									<dd><a href="###">党政</a></dd>
+									<dd><a href="###">简欧</a></dd>
+									<dd><a href="###">新中式</a></dd>
+									<dd><a href="###">古典</a></dd>
+									<dd><a href="###">美式</a></dd>
+									<dd><a href="###">日式</a></dd>
+									<dd><a href="###">混搭</a></dd>
+									<dd><a href="###">党政</a></dd>
+									<dd><a href="###">田园</a></dd>
+									<dd><a href="###">欧式</a></dd>
+									<dd><a href="###">简欧</a></dd>
+									<dd><a href="###">新中式</a></dd>
+									<span class="sel-more" data-more = "0"><span class="sel-text">展开</span><i class="sel-sub">﹀</i><i class="sel-sup">︿</i></span>
+								</div>
+							</div>
+						</dl>
+					</li>
+					<li class="select-list">
+						<dl id="select2">
+							<dt class="MB-click" data-num="0"><span>分类</span></dt>
+							<div class="MB-selbox">
+								<div class="MB-sel">
+									<dd><a href="###">客厅</a></dd>
+									<dd><a href="###">主卧</a></dd>
+									<dd><a href="###">次卧</a></dd>
+									<dd><a href="###">厨房</a></dd>
+									<dd><a href="###">洗手间</a></dd>
+									<dd><a href="###">餐厅</a></dd>
+									<dd><a href="###">阳台</a></dd>
+									<dd><a href="###">走廊</a></dd>
+									<dd><a href="###">儿童房</a></dd>
+									<span class="sel-more" data-more = "0"><span class="sel-text">展开</span><i class="sel-sub">﹀</i><i class="sel-sup">︿</i></span>
+								</div>
+							</div>
+						</dl>
+					</li>
+					<li class="select-list">
+						<dl id="select3">
+							<dt class="MB-click" data-num="0"><span>风格</span></dt>
+							<div class="MB-selbox">
+								<div class="MB-sel">
+									<dd><a href="###">背景墙</a></dd>
+									<dd><a href="###">吊灯</a></dd>
+									<dd><a href="###">隔断</a></dd>
+									<dd><a href="###">橱柜</a></dd>
+									<dd><a href="###">博古架</a></dd>
+									<dd><a href="###">阁楼</a></dd>
+									<dd><a href="###">隐形门</a></dd>
+									<dd><a href="###">吧台</a></dd>
+									<span class="sel-more" data-more = "0"><span class="sel-text">展开</span><i class="sel-sub">﹀</i><i class="sel-sup">︿</i></span>
+								</div>
+							</div>
+						</dl>
+					</li>
+					<li class="select-list">
+						<dl id="select4">
+							<dt class="MB-click" data-num="0"><span>空间</span></dt>
+							<div class="MB-selbox">
+								<div class="MB-sel">
+									<dd><a href="###">60方以下</a></dd>
+									<dd><a href="###">60-80方</a></dd>
+									<dd><a href="###">80-100方</a></dd>
+									<dd><a href="###">100-120方</a></dd>
+									<dd><a href="###">120方以上</a></dd>
+									<span class="sel-more" data-more = "0"><span class="sel-text">展开</span><i class="sel-sub">﹀</i><i class="sel-sup">︿</i></span>
+								</div>
+							</div>
+						</dl>
+					</li>
+					<li class="select-list">
+						<dl id="select6">
+							<dt class="MB-click" data-num="0"><span>品牌</span></dt>
+							<div class="MB-selbox">
+								<div class="MB-sel">
+									<dd><a href="###">四房两厅</a></dd>
+									<dd><a href="###">三房两厅</a></dd>
+									<dd><a href="###">两房两厅</a></dd>
+									<dd><a href="###">一房一厅</a></dd>
+									<span class="sel-more" data-more = "0"><span class="sel-text">展开</span><i class="sel-sub">﹀</i><i class="sel-sup">︿</i></span>
+								</div>
+							</div>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+		<!--产品列表-->
+		<div id="List_main" class="w clearfix">
+			<div class="m-list">
+				<div class="ml-wrap">
+					<div id="" class="filter">
+						<div class="f-line top">
+							<div class="f-sort">
+								<a href="javascript:;" class="curr" onclick=""><span class="fs-tit">人气</span><em class="fs-down"><i class="arrow"></i></em></a>
+								<a href="javascript:;" class="" onclick=""><span class="fs-tit">新品</span><em class="fs-down"><i class="arrow"></i></em></a>
+								<a href="javascript:;" class="" onclick=""><span class="fs-tit">销量</span><em class="fs-down"><i class="arrow"></i></em></a>
+								<a href="javascript:;" class="" onclick=""><span class="fs-tit">价格</span><em class="fs-down"><i class="arrow"></i><i class="arrow-bottom"></i></em></a>
+							</div>
+							<div id="D_selectorPrice" class="f-price">
+								<div class="f-price-set">
+									<div class="fl"><input type="text" class="input-txt" autocomplete="off"  value="" placeholder="¥ 请输入"></div>
+									<em>-</em>
+									<div class="fl"><input type="text" class="input-txt" autocomplete="off"  value="" placeholder="¥ 请输入"></div>
+								</div>
+								<div class="f-price-edit">
+									<a href="javascript:;" class="item1 D-price-cancle">清空</a>
+									<a href="javascript:;" class="item2 D-price-confirm">确定</a>
+								</div>
+							</div>
+							<div id="D_feature" class="f-feature">
+								<ul class="clearfix">
+									<li><a class="selected" href="javascript:;" onclick=""><i></i>买赠</a></li>
+									<li><a class="" href="javascript:;" onclick=""><i></i>满减</a></li>
+									<li><a class="" href="javascript:;" onclick=""><i></i>折扣</a></li>
+									<li><a class="" href="javascript:;" onclick=""><i></i>特价</a></li>
+								</ul>
+							</div>
+							<div id="D_topPage" class="f-pager">
+								<span class="fp-text"><b>14</b><em>/</em><i>100</i></span>
+								<a class="fp-prev hover" onclick="" href="javascript:;" title="">&lt;</a>
+								<a class="fp-next" onclick="" href="javascript:;" title="">&gt;</a>
+							</div>
+						</div>
+					</div>
+					<div id="" class="goods-list">
+						<ul class="gl-warp clearfix">
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							<li class="gl-item">
+								<div class="gl-i-wrap">
+									<div class="p-img bigImg">
+										<a target="_blank" title="" href="">
+											<img width="180" height="180" class="err-product"  data-original="img/productList/b1.jpg">
+										</a>			
+									</div>
+									<div class="p-scroll scrolled">
+										<span class="arrow-btn ps-prev">&lt;</span>
+										<div class="ps-wrap slider">
+											<ul class="ps-main">
+												<li class="ps-item current"><a href="javascript:;" class=""><img data-original="img/productList/m1.jpg" data-bigImg="img/productList/b1.jpg" title="111"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m2.jpg" data-bigImg="img/productList/b2.jpg" title="222"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m3.jpg" data-bigImg="img/productList/b3.jpg" title="333"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m4.jpg" data-bigImg="img/productList/b4.jpg" title="444"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class=""><img data-original="img/productList/m5.jpg" data-bigImg="img/productList/b5.jpg" title="555"></a></li>
+												<li class="ps-item"><a href="javascript:;"  class="curr"><img data-original="img/productList/m6.jpg" data-bigImg="img/productList/b6.jpg" title="666"></a></li>
+											</ul>
+										</div>
+										<span class="arrow-btn ps-next">&gt;</span>
+									</div>
+									<div class="p-name">
+										<a target="_blank" href="">
+											<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+										</a>
+									</div>
+									<div class="p-price">
+										<strong class="" ><em>￥</em><i>59.00</i></strong>
+									</div>
+									<div class="p-counter-price">
+										<strong class="" >专柜价：<em>￥</em><i>159.00</i></strong>
+									</div>
+									<div class="p-commit">
+										<strong><a id="" target="_blank" href="">10+</a>条评价</strong>
+									</div>
+									<div class="p-icons clearfix">
+										<i class="goods-icons">满减</i>
+										<i class="goods-icons">折扣</i>
+									</div>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="pageToolbar" id="pageToolbar"></div>
+				</div>
+			</div>
+			<div class="m-aside">
+				<h2>商品精选</h2>
+				<ul class="m-aside-ul">
+					<li>
+						<div class="p-img">
+							<a href="">
+								<img data-original="img/productList/ybj004.jpg"/>
+							</a>
+						</div>
+						<div class="p-name">
+							<a target="_blank" href="">
+								<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+							</a>
+						</div>
+						<div class="p-price">
+							<strong><em>¥</em><i>89.00</i></strong>
+						</div>
+						<div class="p-icons clearfix">
+							<i class="goods-icons">满减</i>
+							<i class="goods-icons">折扣</i>
+						</div>
+					</li>
+					<li>
+						<div class="p-img">
+							<a href="">
+								<img data-original="img/productList/ybj004.jpg"/>
+							</a>
+						</div>
+						<div class="p-name">
+							<a target="_blank" href="">
+								<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+							</a>
+						</div>
+						<div class="p-price">
+							<strong><em>¥</em><i>89.00</i></strong>
+						</div>
+						<div class="p-icons clearfix">
+							<i class="goods-icons">满减</i>
+							<i class="goods-icons">折扣</i>
+						</div>
+					</li>
+					<li>
+						<div class="p-img">
+							<a href="">
+								<img data-original="img/productList/ybj004.jpg"/>
+							</a>
+						</div>
+						<div class="p-name">
+							<a target="_blank" href="">
+								<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+							</a>
+						</div>
+						<div class="p-price">
+							<strong><em>¥</em><i>89.00</i></strong>
+						</div>
+						<div class="p-icons clearfix">
+							<i class="goods-icons">满减</i>
+							<i class="goods-icons">折扣</i>
+						</div>
+					</li>
+					<li>
+						<div class="p-img">
+							<a href="">
+								<img data-original="img/productList/ybj004.jpg"/>
+							</a>
+						</div>
+						<div class="p-name">
+							<a target="_blank" href="">
+								<em>好想你 <font class="skcolor_ljg">满</font>199<font class="skcolor_ljg">减</font>120 坚并坚182g混合坚果仁 特产零食坚果每日坚果组合混合果</em>
+							</a>
+						</div>
+						<div class="p-price">
+							<strong><em>¥</em><i>89.00</i></strong>
+						</div>
+						<div class="p-icons clearfix">
+							<i class="goods-icons">满减</i>
+							<i class="goods-icons">折扣</i>
+						</div>
+					</li>
+				</ul>
+				<div class="ab-pic">
+					<img src="img/productList/gg.jpg"/>
+				</div>
+			</div>
+		</div>
+		<!--底部搜索框-->
+		<div class="bottom-search w">
+			<div class="search-m">
+	          	<div class="form">
+	            	<input type="text" id=""  class="text" placeholder="请输入您要搜索的关键词">
+	            	<button class="button">搜索</button>
+	          	</div>
+	          	<div class="friend_tips">
+	          		找不到合适的？<a href="javascript:;" onclick="NTKF.im_openInPageChat('kf_10058_1508982217322')">联系客服</a>为你解忧愁！
+	          	</div>
+	        </div>
+		</div>
+		<!--底部-->
+		<div class="footer">
+			<div class="foot-up">
+				<ul class="upbox clearfix">
+					<li>
+						<div class="up-div clearfix">
+							<div class="up-img upbg1"></div>
+							<div class="up-txt">
+								<p class="txt-p1">知名品牌</p>
+								<p class="txt-p2">选我准没错的</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="up-div clearfix">
+							<div class="up-img upbg2"></div>
+							<div class="up-txt">
+								<p class="txt-p1">始于1972年</p>
+								<p class="txt-p2">精益求精好品质</p>
+							</div>
+						</div>
+					</li>	
+					<li>
+						<div class="up-div clearfix">
+							<div class="up-img upbg3"></div>
+							<div class="up-txt">
+								<p class="txt-p1">品质保证</p>
+								<p class="txt-p2">严格工艺把控</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="up-div clearfix">
+							<div class="up-img upbg4"></div>
+							<div class="up-txt">
+								<p class="txt-p1">环保材料</p>
+								<p class="txt-p2">精选每一处用料</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="up-div clearfix">
+							<div class="up-img upbg5"></div>
+							<div class="up-txt">
+								<p class="txt-p1">客服电话</p>
+								<p class="txt-p2 txt-num">0757-63550000</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-box">
+				<div class="foot-mid">
+					<dl>
+						<dt>关于东鹏</dt>
+						<dd><a href="http://www.dongpeng.net/" target="_blank" rel="nofollow">公司简介</a></dd>
+						<dd><a href="http://gz.gzwhir.com/gddpkg201708259783/brand/index_3.aspx" target="_blank" rel="nofollow">企业文化</a></dd>
+						<dd><a href="http://gz.gzwhir.com/gddpkg201708259783/ppry/list_6.aspx" target="_blank" rel="nofollow">品牌实力</a></dd>
+						<dd><a href="http://gz.gzwhir.com/gddpkg201708259783/news/list_9.aspx" target="_blank" rel="nofollow">新闻中心</a></dd>
+					</dl>
+					<dl>
+						<dt>购物指南</dt>
+						<dd><a href="https://www.dpmall.com/dongpeng/zh/helpcenter/index0" target="_blank">购物流程</a></dd>
+						<dd><a href="https://www.dpmall.com/dongpeng/zh/groupPurchase/index" target="_blank">优惠活动</a></dd>
+						<dd><a href="https://www.dpmall.com/dongpeng/zh/helpcenter/index3" target="_blank">售后服务</a></dd>
+						<dd><a href="https://www.dpmall.com/dongpeng/zh/helpcenter/index2" target="_blank">常见问题</a></dd>
+					</dl>
+					<dl>
+						<dt>装修知识</dt>
+						<dd><a href="https://www.dpmall.com/deknowledge/encyclopedia?DeKnowledgeVedio=ZUOBIANQIAZ" target="_blank">安装视频</a></dd>
+						<dd><a href="https://www.dpmall.com/material/index###" target="_blank">教你选材</a></dd>
+						<dd><a href="https://www.dpmall.com/dongpeng/zh/modelhouse/list" target="_blank">精选案例</a></dd>
+						<dd><a href="https://www.dpmall.com/" target="_blank">装修流程</a></dd>
+					</dl>
+					<dl>
+						<dt>购物商城</dt>
+						<dd><a href="https://dongpengcz.tmall.com/?spm=a1z10.1-b-s.1997427721.d4918089.JQOWW0" target="_blank" rel="nofollow">瓷砖天猫店</a></dd>
+						<dd><a href="https://dongpengjj.tmall.com/shop/view_shop.htm?spm=a1z10.3-b-s.w5001-15954254335.4.4YrvN0&mytmenu=mdianpu&utkn=g%2Cw2v4l5f54c7n7oozw664n3f5uk26u1488278511131&user_number_id=865365708&scm=1028.1.1.20001&scene=taobao_shop" target="_blank" rel="nofollow">洁具天猫店</a></dd>
+						<dd><a href="https://mall.jd.com/index-75728.html" target="_blank" rel="nofollow">京东商城</a></dd>
+						<dd><a href="http://brand.vip.com/dongpeng/" target="_blank" rel="nofollow">DP唯品会</a></dd>
+					</dl>
+					<dl class="margin-none">
+						<dt>关注我们</dt>
+						<dd class="foot-dd"><a href="javaScript:void(0)">微信公众号</a><img src="img/public/w-code4.jpg"/></dd>
+						<dd class="foot-dd"><a href="javaScript:void(0)">微信商城</a><img src="img/public/w-code3.jpg"/></dd>
+						<dd><a href="http://weibo.com/p/1006066283216143/home?from=page_100606&mod=TAB#place" target="_blank" rel="nofollow">瓷砖微博</a></dd>
+						<dd><a href="https://www.dpmall.com/dpstatic/active/HelpSellTreasure/HelpSellTreasure.html" target="_blank" rel="nofollow">助销宝下载</a></dd>
+					</dl>
+				</div>
+				<div class="foot-down">
+					<p class="down-p1">
+						<span>友情链接：</span>
+						<a href="http://www.dongpeng.net/" target="_blank" rel="nofollow">东鹏陶瓷</a> |
+						<a href="http://www.dongpengjieju.com/" target="_blank">东鹏洁具</a> |
+						<a href="http://www.dongpengkeji.net/product.php?nid=9&sid=9" target="_blank" rel="nofollow">东鹏硅藻泥</a> |
+						<a href="http://www.dongpengfloor.net/" target="_blank" rel="nofollow">东鹏木地板</a> |
+						<a href="http://www.dongpengkeji.net/" target="_blank" rel="nofollow">东鹏绿家科技</a> |
+						<a href="http://www.innoci.com.cn/" target="_blank" rel="nofollow">innoci洁具</a> |
+						<a href="http://www.dpicn.net/" target="_blank" rel="nofollow">PDI进口瓷砖馆</a> |
+						
+						<!-- <a href="###" class="foot-more" >更多></a> -->
+					</p>
+					<p class="down-p2">
+						<a href="https://www.dpmall.com/dongpeng/zh/helpcenter/index0" target="_blank" rel="nofollow">关于我们</a> |
+						<a href="https://www.dpmall.com/dongpeng/zh/helpcenter/index0" target="_blank" rel="nofollow">联系我们</a> |
+						<a href="https://www.dpmall.com/" target="_blank">诚聘英才</a> |
+						<a href="https://www.dpmall.com/dongpeng/zh/enterpriseProcurement" target="_blank" rel="nofollow">企业采购</a> |
+						<a href="https://www.dpmall.com/dongpeng/zh/helpcenter/index0" target="_blank" rel="nofollow">帮助中心</a>
+					</p>
+					<p>广东东鹏控股股份有限公司©版权所有 保留所有权利 </p>
+					<p style="margin-top: 15px;">粤ICP备13087549号-3</p>
+					<p style="margin: 15px auto;">
+						<a><script src="https://kxlogo.knet.cn/seallogo.dll?sn=e17091844060068926g25w000000&size=0"></script></a>
+						<a  key ="599fe8602548be7568b71164"  logo_size="124x47"  logo_type="business"  href="http://www.anquan.org" ><script src="//static.anquan.org/static/outer/js/aq_auth.js"></script></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/paging.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/productList.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
