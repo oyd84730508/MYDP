@@ -1,0 +1,291 @@
+html,body {
+	font-size: 0.12rem; 
+	font-family: "microsoft yahei";
+	background-color: #fff;
+}
+
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill { 
+       -webkit-box-shadow: 0 0 0 1000px white inset; 
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+      -webkit-box-shadow: 0 0 0 1000px white inset; 
+}
+.editBox input::-webkit-input-placeholder{color:#999;font-size: 0.26rem;}
+.editBox input:-moz-placeholder{color:#999;font-size: 0.26rem;}
+.editBox input::-moz-placeholder{color:#999;font-size: 0.26rem;}
+.editBox input:-ms-input-placeholder{color:#999;font-size: 0.26rem;}
+
+#mbBox {
+	position: relative;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+.m_header_bar{
+	position: relative;
+	height: 0.64rem;
+	line-height: 0.64rem;
+}
+.m_header_bar h2{
+	text-align: center;
+	font-size: 0.36rem;
+	font-weight: normal;
+	color: #000;
+}
+.m_header_bar a.m_header_bar_back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 1.2rem;
+	padding-left: 0.5rem;
+	background: url(../img/privilege/p_arrow_l.png) no-repeat 0.2rem center;
+	background-size: 0.15rem 0.29rem;
+	font-size: 0.28rem;
+	color: #666;
+}
+.header_bg img{
+	width: 100%;
+}
+.info_title{
+	text-align: center;
+	font-size: 0.3rem;
+	color: #000;
+	line-height: 0.4rem;
+}
+.editBox{
+	margin: 0 0.2rem;
+	padding-bottom: 0.3rem;
+}
+.editBox .field{
+	position: relative;
+	border: 1px solid #EAEAEA;
+	border-radius: 0.05rem;
+	margin-top: 0.2rem;
+}
+.editBox .field label.tit{
+	font-size: 0.26rem;
+	color: #000;
+	width: 1.2rem;
+	text-align: center;
+	height: 0.6rem;
+	line-height: 0.62rem;
+	float: left;
+}
+.editBox .field .field-control{
+	float: left;
+	width: 4.6rem;
+	/*line-height: 0.62rem;*/
+	height: 0.6rem;
+}
+.editBox .field input{
+	border: none;
+	outline: none;
+	width: 100%;
+	font-size: 0.26rem;
+	color: #000;
+	/*margin-top: 0.12rem;*/
+	height: 100%;
+}
+.editBox .field.frist .field-control{
+	width: 3rem;
+}
+input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; } 
+.editBox .field input.mesg-code{
+	position: absolute;
+	top: 0.1rem;
+	right: 0.1rem;
+	display: inline-block;
+	background: #FDC041;
+	border-radius: 0.5rem;
+	/*width: 1.2rem;*/
+	text-align: center;
+	color: #fff;
+	/*width: 1.5rem;*/
+	width: auto;
+	padding: 0 0.14rem;
+	height: 0.4rem;
+	line-height: 0.42rem;
+	font-size: 0.24rem;
+	margin: 0;
+}
+.graybg{
+	background: #F0F0F0;
+	height: 0.2rem;
+}
+.plgBox {
+	margin: 0 0.2rem;
+	padding: 0.3rem 0;
+}
+.plgBox img{
+	width: 1.5rem;
+	height: 1.5rem;
+	float: left;
+	margin-right: 0.2rem;
+}
+.plgBox .plgInfo h3{
+	height: 0.68rem;
+	line-height: 0.34rem;
+	font-size: 0.26rem;
+	overflow: hidden;
+	font-weight: normal;
+	color: #333;
+}
+.plgBox .plgInfo p{
+	color: #D63140;
+	height: 0.44rem;
+	line-height: 0.22rem;
+	overflow: hidden;
+	font-size: 0.2rem;
+	margin-top: 0.04rem;
+}
+.plgBox .plgPrice{
+	color: #D63140;
+	font-size: 0.3rem;
+	font-weight: bold;
+	line-height: 0.34rem;
+}
+.plgBox .plgPrice i{
+	font-size: 0.28rem;
+	font-weight: bold;
+}
+.iCodeWrap{
+	position: relative;
+}
+.editBox .iCodeWrap input{
+	width: 3.5rem;
+}
+.iCodeWrap .tips1Ico{
+	position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    /*width: 1rem;*/
+    height: 100%;
+    padding-right: 0.8rem;
+    background: url(../img/privilege/error.png) no-repeat 0.15rem center;
+    background-size: 0.48rem 0.48rem;
+    display: none;
+}
+.iCodeWrap .tips2Ico{
+	position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    /*width: 1rem;*/
+    height: 100%;
+    padding-right: 0.8rem;
+    background: url(../img/privilege/correct.png) no-repeat 0.15rem center;
+    background-size: 0.48rem 0.48rem;
+    display: none;
+}
+.J_AddressWrap{
+	position: relative;
+}
+.J_AddressWrap i{
+	position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    /*width: 1rem;*/
+    height: 100%;
+    padding-right: 0.6rem;
+    background: url(../img/privilege/p_arrrow_r.png) no-repeat 0.2rem center;
+    background-size: 0.17rem 0.34rem;
+}
+
+.ActionWrap h2{
+	font-size: 0.6rem;
+	text-align: center;
+	padding: 0.35rem 0 0.25rem 0;
+	color: #333;
+}
+.ActionWrap p{
+	text-align: center;
+	font-size: 0.3rem;
+	padding: 0.05rem 0;
+	color: #333;
+}
+.ActionWrap{
+	margin: 0 0.2rem;
+}
+.ActionBox{
+	padding: 0.45rem 0;
+}
+.ActionBox a.ActBtn{
+	display:block;
+	/*width: 2.9rem;*/
+	text-align: center;
+	font-size: 0.3rem;
+	line-height: 0.72rem;
+	border-radius: 0.05rem;
+	margin-bottom: 0.1rem;
+}
+.ActionBox a.ActBtn:nth-child(1){
+	/*float: left;*/
+	/*background: #1BACEB;*/
+	color: #fff;
+	padding-left: 0.5rem;
+	/*padding-right: 0.4rem;*/
+	background: #1BACEB url(../img/privilege/zfb_ico.png) no-repeat 2rem center;
+	background-size: 0.4rem 0.4rem;
+	
+	
+}
+.ActionBox a.ActBtn:nth-child(2){
+	/*float: right;*/
+	/*background: #19D100;*/
+	color: #fff;
+	padding-left: 0.5rem;
+	/*padding-right: 0.4rem;*/
+	background: #19D100 url(../img/privilege/wx_ico.png) no-repeat 2rem center;
+	background-size: 0.4rem 0.4rem;
+}
+.mask{
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-color: rgba(0, 0, 0, 0.5);
+  	z-index: 60;
+  	display: none;
+}
+.PaySuccBox{
+	position: fixed;
+	top: 50%;
+  	left: 50%;
+	width: 5rem;
+	margin-left: -2.5rem;
+	margin-top: -1rem;
+	background: #fff;
+	z-index: 66;
+	/*padding: 0.25rem 0;*/
+	border-radius: 0.05rem;
+	display: none;
+}
+
+.PaySuccBox h2{
+	text-align: center;
+	line-height: 0.5rem;
+	font-size: 0.26rem;
+	font-weight: normal;
+	padding-top: 0.2rem;
+}
+.PaySuccBox h3{
+	text-align: center;
+	line-height: 0.5rem;
+	font-size: 0.26rem;
+	font-weight: normal;
+	padding-bottom: 0.2rem;
+}
+.PaySuccBox a{
+	display: block;
+	text-align: center;
+	border-top: 1px solid #F0F0F0;
+	line-height: 0.7rem;
+	color: #D31E2D;
+	font-size: 0.26rem;
+}

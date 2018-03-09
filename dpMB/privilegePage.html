@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<title>特权定金</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="email=no">
+	    <meta name="author" content="Cleam Lee"> 
+		<meta name="Keywords" content="东鹏商城，东鹏官方商城，dongpeng，东鹏瓷砖，瓷砖，洁具，木地板，涂料，背景墙，硅藻泥，进口瓷砖，进口洁具" />
+		<meta name="Description" content="东鹏商城-一站式家装建材购物平台。提供整体家装解决方案。提供商品销售、配送、安装及维修等一站式服务。提供6次上门，免费家装设计，免费预约量房。" />
+		<link rel="stylesheet" type="text/css" href="css/initialize.css" />
+		<link rel="stylesheet" type="text/css" href="css/publicMB.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ydui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/privilege.css" />
+		<script>
+		 	!function(g,f){var j=g.documentElement,i="orientationchange" in window?"orientationchange":"resize",h=function(){var b=j.clientWidth;b&&(b>=640&&(b=640),j.style.fontSize=100*(b/640)+"px")};g.addEventListener&&(f.addEventListener(i,h,!1),h())}(document,window);
+		</script>
+	
+	</head>
+
+	<body>
+		
+		<div id="mbBox">
+			<!--<div class="m_header_bar">
+				<a href="" class="m_header_bar_back">返回</a>
+				<h2>支付特权定金</h2>
+			</div>
+			-->
+			<div id="head_MB">
+				<a href="javascript:history.back(-1)" class="head_back"></a>
+				<div class="head-tit">
+					支付特权定金
+				</div>
+			</div>
+			<div class="header_bg">
+				<img src="img/privilege/Privilege_Bg.png"/>
+			</div>
+			<div class="info_title">验证并填写信息</div>
+			<div class="editBox">
+				<div class="field frist clearfix">
+					<label class="tit">手机号</label>
+					<div class="field-control">
+						<input type="text" name="phone" id="phone" value="" placeholder="输入手机号码"/>
+					</div>
+					<input type="button" value="获取验证码" class="mesg-code" id="sendPhoneCode" onclick="send_phone_code()" autocomplete="off"/>
+				</div>
+				<div class="field iCodeWrap clearfix">
+					<label class="tit">验证码</label>
+					<div class="field-control">
+						<input type="text" name="" id="iCode" value="" placeholder="输入验证码"/>
+					</div>
+					<i class="tips1Ico"></i>
+					<i class="tips2Ico"></i>
+				</div>
+				<div class="field clearfix">
+					<label class="tit">收货人</label>
+					<div class="field-control">
+						<input type="text" name="" id="consignee" value="" placeholder="输入收货人姓名"/>
+					</div>
+				
+				</div>
+				<div class="field clearfix">
+					<label class="tit">手机号</label>
+					<div class="field-control">
+						<input type="text" name="" id="consigneePhone" value="" placeholder="输入收货手机号码"/>
+					</div>
+				
+				</div>
+				<div class="field J_AddressWrap clearfix">
+					<label class="tit">所在地</label>
+					<div class="field-control">
+						<input type="text" class="cell-input" readonly id="J_Address" placeholder="请选择收货地址">
+					</div>
+					<i class="p_arrrow_r"></i>
+				</div>
+				<div class="field clearfix">
+					<label class="tit">详细地</label>
+					<div class="field-control">
+						<input type="text" name="" id="Detail_Address" value="" placeholder="输入详细地"/>
+					</div>
+				
+				</div>
+			</div>
+			<div class="graybg"></div>
+			<div class="plgBox clearfix">
+				<a href="">
+					<img src="img/privilege/plg_img.png"/>
+					<div class="plgInfo">
+						<h3 class="">
+							特权订金东鹏瓷砖1元门店核销领10平阳台砖客厅卧室地砖
+						</h3>
+						<p>
+							阳台砖是建议型号 以门店发出为准
+						</p>
+						<div class="plgPrice">
+							¥<i>10.00</i>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="graybg"></div>
+			<div class="ActionWrap">
+				<h2>¥10.00</h2>
+				<p>支付方式</p>
+				<div class="ActionBox clearfix">
+					<a href="javascript:void(0);" id="PayZfb" onclick="PayZfb();" class="ActBtn">支付宝支付</a>
+					<a href="javascript:void(0);" id="PayWx" onclick="PayWx();" class="ActBtn">微信支付</a>
+				</div>
+			</div>
+			<!--支付成功后显示的弹窗-->
+			<div class="mask"></div>
+			<div class="PaySuccBox">
+				<h2>您已购买此特权定金</h2>
+				<h3>按“确定”进入个人中心查看</h3>
+				<a href="xx.html">确定</a>
+			</div>
+		</div>
+		
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dui.citys.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ydui.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+            var wait = 60;//倒计时60秒
+            var intervalId;//定时
+            var i = wait;//倒计时递减 1
+            function exit() {
+                $("#sendPhoneCode").val(i + "s").addClass("disabled");
+                i = i - 1;
+                if (i <= -1) {
+                    clearInterval(intervalId);
+                    $("#sendPhoneCode").removeAttr("disabled");
+                    $("#sendPhoneCode").val("重新发送").removeClass("disabled");
+                }
+            }
+            function send_phone_code() {
+                var phone = $("#phone").val();
+                if (phone == '') {
+                    alert("请输入手机号！");
+                    return false;
+                }
+                if (!phone.match(/^(((13[0-9]{1})|159|153)+\d{8})$/)) {
+                    alert("手机号格式有误！");
+                    return false;
+                }
+                
+                i = wait;
+//              $.post("ajax.php", {
+//                  "phone": phone
+//              }, function(data) {
+//                  if (data == 1) {
+                        $("#sendPhoneCode").attr("disabled", "disabled");
+                        $("#sendPhoneCode").val("发送成功");
+                        intervalId = setInterval("exit()", 1000);
+//                  }
+//              })
+            }
+            //验证码校对
+            $("#iCode").blur(function () {
+		        var iCode = $("#iCode").val();
+//		        $.ajax({
+//			        url: "",
+//			        type: "GET",
+//			        data:{},
+//			        success: function(msg) {
+						var code2 = 666;
+			       		if (iCode.length <= 0) {
+				          	alert("请输入验证码！");
+				        }
+				        else if (iCode != code2) {
+				          	console.log("验证码输入错误！");
+				          	$(".tips2Ico").hide();
+				          	$(".tips1Ico").show();
+				        }
+				        else {
+				          	console.log("^-^ OK");
+				          	$(".tips1Ico").hide();
+				          	$(".tips2Ico").show();
+				        }
+//			        },
+//			        error: function() {
+//			            alert("错误,请刷新页面重试！");
+//			        }
+//			    });
+//		        
+		    });
+
+            
+            //默认调用省市区
+			!function () {
+				var $target = $('#J_Address');
+			
+				$target.citySelect();
+			
+				$target.on('click', function (event) {
+					event.stopPropagation();
+					$target.citySelect('open');
+				});
+			
+				$target.on('done.ydui.cityselect', function (ret) {
+					$(this).val(ret.provance + ' ' + ret.city + ' ' + ret.area);
+				});
+			}();
+			
+			/*点击支付宝支付*/
+			function PayZfb(){
+				var phone = $("#phone").val();//手机号
+				var iCode = $("#iCode").val();//验证码
+			    var consignee =$("#consignee").val();//收货人
+			    var consigneePhone = $("#consigneePhone").val();//收货人手机号
+			    var J_Address = $("#J_Address").val();//收货地址
+			    var Detail_Address = $("#Detail_Address").val();//收货详细地
+			    if(!(/^1[34578]\d{9}$/.test(phone))){
+					alert("请输入手机号！");
+				}else if(iCode==""){
+					alert("请输入验证码");
+				}else if(consignee.length == 0){
+					alert("请输入收货人姓名");
+				}else if(!(/^1[34578]\d{9}$/.test(consigneePhone))){
+					alert("手机号码输入有误，请重填");
+				}else if(J_Address==""){
+					alert("请选择收货地址");
+				}else if(Detail_Address==""){
+					alert("请输入详细地");
+				}else{
+				    $.ajax({
+				        url: "",
+				        type: "GET",
+				        data:{},
+				        success: function(msg) {
+				       		$(".mask").show();
+				       		$(".PaySuccBox").show();
+				        },
+				        error: function() {
+				            alert("错误,请刷新页面重试！");
+				        }
+				    });
+				}
+			}
+			/*点击微信支付*/
+			function PayWx(){
+				var phone = $("#phone").val();//手机号
+				var iCode = $("#iCode").val();//验证码
+			    var consignee =$("#consignee").val();//收货人
+			    var consigneePhone = $("#consigneePhone").val();//收货人手机号
+			    var J_Address = $("#J_Address").val();//收货地址
+			    var Detail_Address = $("#Detail_Address").val();//收货详细地
+			    if(!(/^1[34578]\d{9}$/.test(phone))){
+					alert("请输入手机号！");
+				}else if(iCode==""){
+					alert("请输入验证码");
+				}else if(consignee.length == 0){
+					alert("请输入收货人姓名");
+				}else if(!(/^1[34578]\d{9}$/.test(consigneePhone))){
+					alert("手机号码输入有误，请重填");
+				}else if(J_Address==""){
+					alert("请选择收货地址");
+				}else if(Detail_Address==""){
+					alert("请输入详细地");
+				}else{
+				    $.ajax({
+				        url: "",
+				        type: "GET",
+				        data:{},
+				        success: function(msg) {
+				       		$(".mask").show();
+				       		$(".PaySuccBox").show();
+				        },
+				        error: function() {
+				            alert("错误,请刷新页面重试！");
+				        }
+				    });
+				}
+			}
+        </script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+body{
+}
+.part1{
+	background: #fff;
+	padding: 0.15rem 0;
+}
+.order-succ-tips{
+	font-size: 0.24rem;
+	text-align: center;
+	padding: 0.25rem 0 0.3rem;
+}
+.order-in-t{
+	font-size: 0.22rem;
+	color: #333;
+	text-align: center;
+}
+.order-in-num{
+	font-size: 0.4rem;
+	font-weight: bold;
+	color: #D7000F;
+	text-align: center;
+	margin-top: 0.1rem;
+	letter-spacing: 0.02rem;
+}
+.f_tips{
+	padding: 0 0.3rem;
+	text-align: center;
+	margin-top: 0.45rem;
+	color: #999;
+	font-size: 0.2rem;
+	line-height: 0.42rem;
+}
+.f_tips i{
+	color: #D7000F;
+}
+.f_tips span{
+	color: #3fa9ef;
+}
+.ActionBox{
+	padding: 0.5rem 0.3rem;
+	background: #fff;
+	margin-top: 0.3rem;
+}
+.ActionBox a.ActBtn{
+	display:block;
+	text-align: center;
+	font-size: 0.3rem;
+	line-height: 0.72rem;
+	border-radius: 0.05rem;
+	
+}
+.ActionBox a.ActBtn:nth-child(1){
+	color: #fff;
+	padding-left: 0.5rem;
+	background: #1BACEB url(../img/PayPageMB/zfb_ico.png) no-repeat 1.9rem center;
+	background-size: 0.4rem 0.4rem;
+	margin-bottom: 0.15rem;
+}
+.ActionBox a.ActBtn:nth-child(2){
+	color: #fff;
+	padding-left: 0.5rem;
+	background: #19D100 url(../img/PayPageMB/wx_ico.png) no-repeat 1.9rem center;
+	background-size: 0.4rem 0.4rem;
+}
+.problem {
+    position: fixed;
+    bottom: 1.2rem;
+    width: 100%;
+    display: block;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.18rem;
+    color: #818181;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+}

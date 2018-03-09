@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>发票</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<meta name="author" content="Cleam Lee">
+		<meta name="Keywords" content="东鹏商城，东鹏官方商城，dongpeng，东鹏瓷砖，瓷砖，洁具，木地板，涂料，背景墙，硅藻泥，进口瓷砖，进口洁具" />
+		<meta name="Description" content="东鹏商城-一站式家装建材购物平台。提供整体家装解决方案。提供商品销售、配送、安装及维修等一站式服务。提供6次上门，免费家装设计，免费预约量房。" />
+		<link rel="stylesheet" type="text/css" href="css/initialize.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/publicMB.css"/>
+		<link rel="stylesheet" type="text/css" href="css/InvoiceMB.css" />
+		<script>
+			! function(g, f) {
+				var j = g.documentElement,
+					i = "orientationchange" in window ? "orientationchange" : "resize",
+					h = function() {
+						var b = j.clientWidth;
+						b && (b >= 640 && (b = 640), j.style.fontSize = 100 * (b / 640) + "px")
+					};
+				g.addEventListener && (f.addEventListener(i, h, !1), h())
+			}(document, window);
+		</script>
+
+	</head>
+
+	<body>
+		<div id="mbBox">
+			<div id="head_MB">
+				<a href="javascript:history.back(-1)" class="head_back"></a>
+				<div class="head-tit">
+					发票
+				</div>
+			</div>
+			<div class="invoice_list">
+				<form action="" method="post">
+					<div class="invoice_on_off clearfix">
+						<strong>是否开发票</strong><span class="OnOff"><label><input type="radio" name="OnOff" id="on" value="on" />是</label><label><input type="radio" name="OnOff" id="off" value="off" />否</label><input type="reset" name="reset" style="display: none;" /></span>
+					</div>
+					<div class="invoice_type">
+						<div class="invoice_type_tit clearfix">
+							<strong class="fl">发票类型</strong><span class="fr"><em class="fp_typeTxt"></em><i></i></span>
+						</div>
+						<ul class="invoice_type_ul">
+							<li>
+								<h3><label for=""><input type="radio" name="bill" id="ptfp" value="" /></label><em>普通发票</em></h3>
+								<p>部分地区开展住宿业增值税小规模纳税人自开增值税专用发票试点工作</p>
+							</li>
+							<li>
+								<h3><label for=""><input type="radio" name="bill" id="zzsfp" value="" /></label><em>增值税专用发票</em></h3>
+								<p>部分地区开展住宿业增值税小规模纳税人自开增值税专用发票试点工作</p>
+							</li>
+						</ul>
+					</div>
+					<!--选择普通发票时显示这块内容-->
+					<div class="invoice_type invoice_type_titBox ptfpBox" style="display: none;">
+						<div class="invoice_type_tit clearfix">
+							<strong class="fl">发票抬头</strong><span class="fr"><em class="fp_ttTxt"></em><i></i></span>
+						</div>
+						<ul class="invoice_type_ul">
+							<li>
+								<h3><label for=""><input class="personal" type="radio" name="InvoiceTit" id="" value="" /><em>个人</em></label><input style="display: none;" required="required" class="perInput" type="text" name="" id="" value="" placeholder="请输入发票抬头人姓名"/></h3>
+							</li>
+							<li>
+								<h3><label for=""><input class="company" type="radio" name="InvoiceTit" id="" value="" /><em>公司</em></label><input style="display: none;" required="required" class="comInput" type="text" name="" id="" value="" placeholder="请输入发票抬头名称"/></h3>
+							</li>
+							<li style="display: none;" class="TaxInput">
+								<h3><label for=""><i>*</i>税号</label><input required="required" type="text" name="" id="" value="" placeholder="请输入纳税人识别号"/></h3>
+							</li>
+						</ul>
+					</div>
+					<!--选择增值税发票时显示这块内容-->
+					<div class="invoice_type invoice_type_titBox zzsfpBox" style="display: none;">
+						<div class="invoice_type_tit clearfix">
+							<strong class="fl">发票抬头</strong><span class="fr">公司<i></i></span>
+						</div>
+						<ul class="invoice_type_ul">
+							<li>
+								<h3><label for=""><i>*</i>公司</label><input required="required" type="text" name="" id="" value="" placeholder="请输入发票抬头名称"/></h3>
+							</li>
+							<li>
+								<h3><label for=""><i>*</i>税号</label><input required="required" type="text" name="" id="" value="" placeholder="请输入纳税人识别号"/></h3>
+							</li>
+							<li>
+								<h3><label for=""><i>*</i>注册地址</label><input required="required" type="text" name="" id="" value="" placeholder="请输入公司注册地址"/></h3>
+							</li>
+							<li>
+								<h3><label for=""><i>*</i>注册电话</label><input required="required" type="text" name="" id="" value="" placeholder="请输入公司注册电话号码"/></h3>
+							</li>
+							<li>
+								<h3><label for=""><i>*</i>开户银行</label><input required="required" type="text" name="" id="" value="" placeholder="请输入公司开户银行"/></h3>
+							</li>
+							<li>
+								<h3><label for=""><i>*</i>银行账户</label><input required="required" type="text" name="" id="" value="" placeholder="请输入公司银行账户"/></h3>
+							</li>
+							<li>
+								<h3><label for=""><i>*</i>营业执照</label><input required="required" class="imgPic" type="file" name="" id="" value=""/></h3>
+								<p style="margin-left: 1rem;">(请上传公司营业执照图片)</p>
+							</li>
+						</ul>
+					</div>
+					<div class="invoice_type">
+						<div class="invoice_type_tit clearfix">
+							<strong class="fl">收票人手机号</strong>
+						</div>
+						<ul class="taker-info">
+							<li class="taker-ic"><label for="">收票人</label><input required="required" type="text" name="" id="" value="" placeholder="请输入收票人名字"/></li>
+							<li class="taker-ic"><label for="">手机号码</label><input required="required" type="text" name="" id="" value="" placeholder="请输入收票人号码"/></li>
+							<li class="taker-ic"><label for="">所在地区</label>
+								<div data-toggle="distpicker" id="distpicker1">
+									<div class="form-group">
+										<select class="form-control" id="province1" required="required" data-province=""></select>
+									</div>
+									<div class="form-group">
+										<select class="form-control" id="city1" required="required" data-city=""></select>
+									</div>
+									<div class="form-group">
+										<select class="form-control" id="district1" data-district=""></select>
+									</div>
+								</div>
+							</li>
+							<li class="taker-ic"><label for="">详细地址</label><input required="required" type="text" name="" id="" value="" placeholder="请输入详细地址"/></li>
+						</ul>
+					</div>
+					<div class="invoice_type">
+						<div class="invoice_type_tit clearfix">
+							<strong class="fl">普通商品发票内容</strong><span class="fr"><i></i></span>
+						</div>
+						<ul class="invoice_type_ul">
+							<li>
+								<h3><!--<label for=""><input type="radio" name="bill" id="" value="" /></label>-->商品明细</h3>
+								<p>发票内容限时详细商品名称及价格信息。</p>
+							</li>
+							<!--<li>
+								<h3><label for=""><input type="radio" name="bill" id="" value="" /></label>商品类别</h3>
+								<p>本单可开发票内容：瓷砖。</p>
+							</li>-->
+							
+						</ul>
+						
+					</div>
+					<input type="submit" class="makeSureBtn" value="确定">
+						
+				</form>
+				
+				
+			</div>
+		
+		</div>
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/distpicker.data.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/distpicker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/publicMB.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/InvoiceMB.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
