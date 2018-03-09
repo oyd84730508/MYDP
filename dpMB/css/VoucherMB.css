@@ -1,0 +1,135 @@
+body{
+	background-color: #eee;
+}
+.container {
+	border: none;
+}
+.swiper1 {
+	width: 100%;
+	background: #fff;
+}
+.swiper1 .selected {
+	color: #FE002C;
+	border-bottom: 0.02rem solid #FE002C;
+}
+.swiper1 .swiper-slide {
+	text-align: center;
+	font-size: 0.22rem;
+	height: 0.6rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.swiper2 {
+	width: 100%;
+}
+.swiper2 .swiper-slide {
+	height: 100%;
+	color: #fff;
+	/*text-align: center;*/
+	box-sizing: border-box !important;
+	overflow-x: hidden !important;
+}
+.unUseCouponPage li{
+	
+	width: 6.06rem;
+	height: 2.56rem;
+	background: url(../img/CashCouponMB/graybg.png) no-repeat center center;
+	background-size: 6.06rem 2.56rem;
+	margin: 0.2rem auto 0;
+	position: relative;
+	
+}
+.canUseCouponPage li{
+	width: 6.06rem;
+	height: 2.56rem;
+	background: url(../img/CashCouponMB/redbg.png) no-repeat center center;
+	background-size: 6.06rem 2.56rem;
+	margin: 0.2rem auto 0;
+	position: relative;
+}
+
+.c_line1 .c_type{
+	float: right;
+	font-size: 0.26rem;
+	line-height: normal;
+}
+.c_line1{
+	font-size: 0.22rem;
+	padding: 0.2rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.c_line1 b{
+	font-size: 0.4rem;
+	
+}
+.c_line2{
+	font-size: 0.3rem;
+	padding: 0 0.2rem;
+}
+.c_line3{
+	font-size: 0.22rem;
+	padding:0 0.2rem;
+	color: #666;
+	position: absolute;
+	bottom: 0.25rem;
+	width: 5.4rem;
+}
+.c_line3 .cbox{
+	position: absolute;
+	right: 0rem;
+	top: -0.05rem;
+}
+.c_line3 .cbox input{
+	box-sizing: border-box;
+    border: none;
+    background:url(../img/CashCouponMB/r1.png) no-repeat center center;
+    background-size: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #666;
+    width: 0.39rem;
+    height: 0.39rem;
+}
+.c_line3 .cbox input[type=radio]:checked{
+	box-sizing: border-box;
+    border: none;
+    background:url(../img/CashCouponMB/r2.png) no-repeat center center;
+    background-size: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #666;
+    width: 0.39rem;
+    height: 0.39rem;
+}
+.order_coupons_fixbar_inner{
+	position: fixed;
+    z-index: 101;
+    bottom: 0;
+	left: 0;
+    right: 0;
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    background-color: #FF352F;
+    color: #fff;
+   	font-size: 0.24rem;
+   	letter-spacing: 0.1rem;
+}

@@ -1,0 +1,494 @@
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+input {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.grayDiv{
+	height: 0.1rem;
+	background: #EDEDED;
+}
+.address_defalut {
+	display: flex;
+    position: relative;
+    padding-bottom: 8px;
+    background: #fff url(../img/CommoditySettlementMB/boder-bottom.png) -7px bottom repeat-x;
+    background-size: 64px 5px;
+}
+
+.address_defalut .flex-item:nth-child(1){
+	flex: 1;
+	background: url(../img/CommoditySettlementMB/location.png) no-repeat center center;
+	background-size: 0.26rem 0.33rem;
+}
+.address_defalut .flex-item:nth-child(2){
+	flex: 6;
+}
+.address_defalut .flex-item:nth-child(3){
+	flex: 1;
+	background: url(../img/CommoditySettlementMB/backBig.png) no-repeat center center;
+	background-size: 0.2rem 0.37rem;
+}
+.address_defalut .NoAdrr{
+	text-align: center;
+	line-height: 1.2rem;
+	font-size: 0.26rem;
+	/*display: none;*/
+	color: #999;
+}
+.address_defalut .addrShow{
+	display: none;
+}
+.address_defalut .addrShow h3{
+	font-weight: bold;
+	font-size: 0.2rem;
+	margin-top: 0.15rem;
+}
+.address_defalut .addrShow h3 span{
+	margin-right: 0.3rem;
+}
+.address_defalut .addrShow p{
+	display: block;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    line-height: 0.34rem;
+    overflow: hidden;
+    font-size: 0.2rem;
+    color: #333;
+    padding: 0.05rem 0;
+}
+.skill-ul{
+
+}
+.skill-ul li{
+	padding: 0.2rem;
+	border-bottom: 0.02rem solid #eee;
+}
+.skill-ul .prd-img{
+	float: left;
+	width: 1.8rem;
+	height: 1.8rem;
+	margin-right: 0.2rem;
+}
+.skill-ul .prd-img img{
+	width: 100%;
+}
+.skill-ul .prd-img a{
+	display: block;
+}
+.skill-ul .prd-info{
+
+}
+.skill-ul .prd-info .prd-info-tit a{
+	display: block;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	height: 0.6rem;
+	line-height: 0.3rem;
+	overflow: hidden;
+	font-size: 0.22rem;
+	color: #333;
+}
+.prd-info-size{
+	font-size: 0.22rem;
+	color: #999;
+	margin-top: 0.05rem;
+	height: 0.64rem;
+	line-height: 0.3rem;
+}
+
+.prd-info-bottom{
+	margin-top: 0.06rem;
+	position: relative;
+}
+.prd-info-bottom .prd-info-p1{
+	color: #FE0002;
+	font-size: 0.2rem;
+}
+.prd-info-bottom .prd-info-p1 i{
+	font-size: 0.34rem;
+}
+.prd-info-bottom .sl{
+	color: #666;
+	font-size: 0.22rem;
+	margin-top: 0.12rem;
+}
+.om-message-txt{
+	padding: 0.15rem 0;
+}
+.om-message-txt label{
+	float: left;
+	width: 1.4rem;
+	text-align: right;
+	font-size: 0.22rem;
+}
+.om-message-txt textarea{
+	width: 4.6rem;
+	height: 0.9rem;
+	line-height: 0.3rem;
+	border: none;
+	resize: none;
+	font-size: 0.22rem;
+	font-family: "微软雅黑";
+	color: #666;
+	
+}
+.ListUl{
+	padding: 0.08rem 0;
+}
+.ListUl li{
+	border-bottom: 0.02rem solid #eee;
+	padding: 0 0.2rem;
+	line-height: 0.6rem;
+	font-size: 0.22rem;
+	color: #666;
+}
+.fr_span i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 0.3rem;
+	height: 0.5rem;
+	background: url(../img/CommoditySettlementMB/backBig.png) no-repeat right center;
+	background-size: 0.12rem 0.2rem;
+}
+.ListUl li:nth-last-child(1){
+	border: none;
+}
+.pr-info-ul{
+	border-bottom: 0.02rem solid #eee;
+	padding: 0.1rem 0;
+}
+.pr-info-ul li{
+	padding: 0 0.2rem;
+	line-height: 0.5rem;
+	font-size: 0.22rem;
+
+}
+.pr-info-ul li label{
+	color: #666;
+}
+.pr-info-ul li:nth-child(1) .fr{
+	color: #FE0002;
+}
+.pr-info-ul li:nth-child(2) .fr{
+	color: #999;
+}
+.pr-info-ul li:nth-child(3) .fr{
+	color: #999;
+}
+.pr-info-ul li:nth-child(4) .fr{
+	color: #666;
+}
+.total-price{
+	line-height: 0.6rem;
+	font-size: 0.24rem;
+	padding: 0 0.2rem;
+	font-weight: bold;
+	padding-bottom: 0.8rem;
+	color: #666;
+}
+.red_span{
+	color: #FE0002;
+	font-size: 0.22rem;
+}
+.red_span i{
+	font-size: 0.26rem;
+	margin-left: 0.05rem;
+}
+input.makeSureBtn {
+    position: fixed;
+    z-index: 101;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    background-color: #FF352F;
+    color: #fff;
+    font-size: 0.24rem;
+    letter-spacing: 0.1rem;
+}
+.address {
+	display: flex;
+    position: relative;
+    border-bottom: 0.02rem solid #eee;
+    padding:  0.2rem 0;
+}
+
+.address .flex-item:nth-child(1){
+	flex: 1;
+	align-items:center;
+	justify-content:center;
+	display: flex;
+	flex-direction:column; 
+}
+.address  .flex-item:nth-child(2){
+	flex: 7;
+}
+.address .flex-item:nth-child(3){
+	flex: 1;
+	/*height: 1.2rem;*/
+	background: url(../img/AdressListMB/bianji.png) no-repeat center center;
+	background-size: 0.27rem 0.28rem;
+	align-items:center;
+	justify-content:center;
+	display: flex;
+	flex-direction:column; 
+}
+.address .flex-item:nth-child(1) input{
+	box-sizing: border-box;
+    border: none;
+    background:url(../img/AdressListMB/r_1.png) no-repeat center center;
+    background-size: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #666;
+    width: 0.39rem;
+    height: 0.39rem;
+}
+.address .flex-item:nth-child(1) input[type=radio]:checked{
+	box-sizing: border-box;
+    border: none;
+    background:url(../img/AdressListMB/r_2.png) no-repeat center center;
+    background-size: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #666;
+    width: 0.39rem;
+    height: 0.39rem;
+}
+.address .flex-item h3 {
+	line-height: 0.3rem;
+}
+.address .flex-item h3 span{
+	margin-right: 0.4rem;
+	font-size: 0.24rem;
+	color: #333;
+}
+.address .flex-item h3 .Df{
+	color: #FE0002;
+	border-radius: 0.05rem;
+	border: 0.02rem solid #FE0002;
+	padding: 0 0.1rem;
+	box-sizing: border-box;
+	display: none;
+}
+.address .flex-item h3 .showDf{
+	display: inline-block;
+}
+.address .flex-item p{
+	line-height: 0.3rem;
+	/*height: 0.6rem;*/
+	font-size: 0.22rem;
+	color: #666;
+	margin-top: 0.1rem;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	overflow: hidden;
+}
+a.redBtn{
+	display: block;
+	width: 5rem;
+	margin: 0.5rem auto;
+	height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    background-color: #FF352F;
+    color: #fff;
+    font-size: 0.24rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.08rem;
+}
+/*新增地址*/
+.head_MB{
+	background: #fff;
+	padding: 0.1rem 0;
+	border-bottom: 0.02rem solid #EEEEEE;
+	position: relative;
+}
+.head_MB .head_back {
+	position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 0.7rem;
+    text-align: center;
+    width: 0.7rem;
+    background: url(../img/publicMB/返回顶部@2x.png) no-repeat center center;
+    background-size: 0.16rem 0.3rem;
+}
+.head_MB .head-tit{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #333;
+}
+.Address_Add{
+	/*display: none;*/
+}
+ul.taker-info{
+
+}
+ul.taker-info li{
+	padding: 0.15rem 0.2rem 0.15rem 0.2rem;
+	font-size: 0.2rem;
+	color: #333;
+	border-bottom: 0.02rem solid #eee;
+}
+ul.taker-info li label{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0.1rem;
+	width: 1.2rem;
+}
+ul.taker-info li input{
+	outline: none;
+	border: none;
+	height: 0.44rem;
+	line-height: 0.46rem;
+	width: 4.6rem;
+	border-radius: 0.05rem;
+	text-indent: 0.15rem;
+}
+
+ul.taker-info li.taker-ic label{
+	width: 1.2rem;
+	position: relative;
+}
+
+#distpicker1{
+	display: inline-block;
+	vertical-align: middle;
+}
+#distpicker1 select {
+	box-sizing: border-box;
+	border: none;
+	font-size: 0.2rem;
+	font-family: simhei;
+	color: #666;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0.05rem;
+}
+#distpicker1 select option{
+	color: #817D7E;
+}
+#distpicker1 select::-webkit-input-placeholder{color:#999;}
+#distpicker1 select:-moz-placeholder{color:#999;}
+#distpicker1 select::-moz-placeholder{color:#999;}
+#distpicker1 select:-ms-input-placeholder{color:#999;}
+.form-group{
+	display: inline-block;
+	vertical-align: middle;
+}
+/*省*/
+#province1 {
+    width: 1.45rem;
+    height: 0.4rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-indent: 0.1rem;
+    /*background: #01A1FF;*/
+    color: #666;
+    font-size: 0.2rem;
+}
+/*市*/
+#city1 {
+	width: 1.45rem;
+    height: 0.4rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap;
+	text-indent: 0.1rem;  
+	/*background: #01A1FF;*/
+	color: #666;
+	font-size: 0.2rem;
+}
+/* 区 */
+#district1 {
+	width: 1.45rem;
+    height: 0.4rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap;
+	text-indent: 0.1rem;  
+	/*background: #01A1FF;*/
+	color: #666;
+	font-size: 0.2rem;
+}
+.makeDefault{
+	padding: 0.15rem 0.2rem;
+}
+.makeDefault input{
+	box-sizing: border-box;
+    border: none;
+    background:url(../img/AdressListMB/r_1.png) no-repeat center center;
+    background-size: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #666;
+    width: 0.39rem;
+    height: 0.39rem;
+    vertical-align: middle;
+}
+.makeDefault input[type=checkbox]:checked{
+	box-sizing: border-box;
+    border: none;
+    background:url(../img/AdressListMB/r_2.png) no-repeat center center;
+    background-size: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #666;
+    width: 0.39rem;
+    height: 0.39rem;
+}
+.makeDefault span{
+	vertical-align: middle;
+	font-size: 0.22rem;
+	margin-left: 0.2rem;
+}
+.step2,.step3,.step4{
+	display: none; 
+}
+/*编辑收货地址*/
+.actionBtn{
+	padding: 0.3rem 0;
+}
+.actionBtn a{
+	display: block;
+	float: left;
+	width: 2.9rem;
+	margin-left: 0.2rem;
+	text-align: center;
+	height: 0.6rem;
+	line-height: 0.62rem;
+	border-radius: 0.05rem;
+	color: #fff;
+	font-size: 0.2rem;
+}
+.actionBtn a:nth-child(1){
+	background: #999;
+}
+.actionBtn a:nth-child(2){
+	background: #FF352F;
+}

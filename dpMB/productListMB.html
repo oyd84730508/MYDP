@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>商品列表页</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<meta name="author" content="Cleam Lee">
+		<meta name="Keywords" content="东鹏商城，东鹏官方商城，dongpeng，东鹏瓷砖，瓷砖，洁具，木地板，涂料，背景墙，硅藻泥，进口瓷砖，进口洁具" />
+		<meta name="Description" content="东鹏商城-一站式家装建材购物平台。提供整体家装解决方案。提供商品销售、配送、安装及维修等一站式服务。提供6次上门，免费家装设计，免费预约量房。" />
+		<link rel="stylesheet" type="text/css" href="css/initialize.css" />
+		<link rel="stylesheet" type="text/css" href="css/publicMB.css"/>
+		<link rel="stylesheet" type="text/css" href="css/productListMB.css" />
+		<script>
+			! function(g, f) {
+				var j = g.documentElement,
+					i = "orientationchange" in window ? "orientationchange" : "resize",
+					h = function() {
+						var b = j.clientWidth;
+						b && (b >= 640 && (b = 640), j.style.fontSize = 100 * (b / 640) + "px")
+					};
+				g.addEventListener && (f.addEventListener(i, h, !1), h())
+			}(document, window);
+		</script>
+
+	</head>
+
+	<body>
+		<div id="mbBox">
+			<div class="mask"></div>
+<!--			<div class="mask1"></div>-->
+			<div id="head_MB">
+				<a href="javascript:history.back(-1)" class="head_back"></a>
+				<a href="/designer/classification" class="head_search">
+					<p></p><input type="text" id="search_MB" placeholder="请输入您要搜索的关键词"></a>
+			</div>
+			<ul class="new-search-tab">
+				<li class="new-change-eleven sanjiao"><span>销量</span><i></i></li>
+				<li class="new-change-eleven sanjiao"><span class="">人气</span><i></i></li>
+				<li class="new-change-eleven sanjiao"><span class="">价格</span><i></i></li>
+				<li class="new-change-eleven sx"><span class="">筛选</span><i></i></li>
+			</ul>
+			<ul class="new-search-tab1 clearfix">
+				<li class="">
+					<div class="a-tit">品类</div>
+					<div class="a-con clearfix">
+						<span class="sel">1</span>
+						<span>2</span>
+						<span>3</span>
+						<span>4</span>
+						<span>5</span>
+						<span>6</span>
+						<span>7</span>
+						<span>8</span>
+						<span>9</span>
+						<span>1</span>
+						<span>2</span>
+						<span>3</span>
+						<span>4</span>
+						<span>5</span>
+						<span>6</span>
+						<span>7</span>
+					</div>
+				</li>
+				<li class="">
+					<div class="a-tit">分类</div>
+					<div class="a-con clearfix">
+						<span>11</span>
+						<span>21</span>
+						<span>31</span>
+						<span>41</span>
+						<span>51</span>
+						<span>61</span>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="" style="">
+				<ul class="pd-list-ul">
+		    		<li class="pd-list-li">
+		    			<a href="" class="clearfix">
+		    				<div class="product-img">
+		    					<img data-original="img/productListMB/pd-img.jpg"/>
+			    			</div>
+			    			<div class="product-info-box">
+			    				<div class="product-name">商品标题商品标题商品标题商品标题</div>
+			    				<div class="product-price-m">
+			    					<span class="product-price">&yen;<b>184.00</b></span>
+			    				</div>
+			    				<div class="product-counter-price"><span>专柜价：&yen;1184.00</span><span><i>折扣券</i></span><span><i>满减</i></span></div>
+			    				<div class="gray-pro-info"><b>200+</b>条评价</div>
+			    			</div>
+		    			</a>
+		    		</li>
+		    		<li class="pd-list-li">
+		    			<a href="" class="clearfix">
+		    				<div class="product-img">
+		    					<img data-original="img/productListMB/pd-img.jpg"/>
+			    			</div>
+			    			<div class="product-info-box">
+			    				<div class="product-name">商品标题商品标题商品标题商品标题</div>
+			    				<div class="product-price-m">
+			    					<span class="product-price">&yen;<b>184.00</b></span>
+			    				</div>
+			    				<div class="product-counter-price"><span>专柜价：&yen;1184.00</span><span><i>折扣券</i></span><span><i>满减</i></span></div>
+			    				<div class="gray-pro-info"><b>200+</b>条评价</div>
+			    			</div>
+		    			</a>
+		    		</li>
+		    		
+		    	</ul>
+		    	<div class="load_more" data-numo="1" onclick="setDiv()">加载更多</div>
+			</div>
+			
+			<div class="right-pannel">
+				<form action="" method="post">
+				<div class="right-pannel-in">
+					
+					<div class="right-pannel-in-w">
+						<div class="pannel-list-w priceRange-w">
+							<h3>价格区间</h3>
+							<div class="clearfix">
+								<span><input type="text" name="" id="" value="" placeholder="最低价"/></span>
+								<span>--</span>
+								<span><input type="text" name="" id="" value="" placeholder="最高价"/></span>
+							</div>
+						</div>
+						<div class="pannel-list-w rule-w">
+							<h3>促销规则<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>						
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>一级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div> 
+						<div class="pannel-list-w classify-w">
+							<h3>二级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>三级分类<span class="sel-more" data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+						<div class="pannel-list-w classify-w">
+							<h3>属性一<span class="sel-more " data-more = "0"></span></h3>
+							<div class="selBox" id="">
+								<div class="MB-sel clearfix">
+									<span class="s_active">买赠</span>
+									<span>满减</span>
+									<span>折扣</span>
+									<span>特价</span>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+				<div class="index-bnts">
+					<input type="reset" value="重置">
+					<input type="submit" name="" id="" value="确定" />
+				</div>
+				</form>
+			</div>
+			
+			<!--返回顶部-->
+			<div class="gotop" style="display: none;"></div>
+		</div>
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/publicMB.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/productListMB.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

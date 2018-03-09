@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>订单确认</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<meta name="author" content="Cleam Lee">
+		<meta name="Keywords" content="东鹏商城，东鹏官方商城，dongpeng，东鹏瓷砖，瓷砖，洁具，木地板，涂料，背景墙，硅藻泥，进口瓷砖，进口洁具" />
+		<meta name="Description" content="东鹏商城-一站式家装建材购物平台。提供整体家装解决方案。提供商品销售、配送、安装及维修等一站式服务。提供6次上门，免费家装设计，免费预约量房。" />
+		<link rel="stylesheet" type="text/css" href="css/initialize.css" />
+		<link rel="stylesheet" type="text/css" href="css/publicMB.css"/>
+		<link rel="stylesheet" type="text/css" href="css/PayPageMB.css" />
+		<script>
+			! function(g, f) {
+				var j = g.documentElement,
+					i = "orientationchange" in window ? "orientationchange" : "resize",
+					h = function() {
+						var b = j.clientWidth;
+						b && (b >= 640 && (b = 640), j.style.fontSize = 100 * (b / 640) + "px")
+					};
+				g.addEventListener && (f.addEventListener(i, h, !1), h())
+			}(document, window);
+		</script>
+
+	</head>
+
+	<body>
+		<div id="mbBox">
+			<div id="head_MB">
+				<a href="javascript:history.back(-1)" class="head_back"></a>
+				<div class="head-tit">
+					订单确认
+				</div>
+			</div>
+			<div class="part1">
+				<h2 class="order-succ-tips">订单提交成功！</h2>
+				<div class="order-in-t">
+					应付金额：
+				</div>
+				<div class="order-in-num">
+					&yen;888888.00
+				</div>
+				<div class="f_tips">
+					请您在提交订单后<i>72小时</i>内完成支付，否则订单会被取消。<br />
+					如需改价，<span onclick="NTKF.im_openInPageChat('kf_10058_1508982217322')">请联系客服</span>
+				</div>
+				
+			</div>
+			<div class="ActionBox clearfix">
+				<a href="javascript:void(0);" id="PayZfb" onclick="PayZfb();" class="ActBtn">支付宝支付</a>
+				<a href="javascript:void(0);" id="PayWx" onclick="PayWx();" class="ActBtn">微信支付</a>
+			</div>
+			<div class="problem">
+				支付过程中如有任何疑问，请咨询400-880-2600
+			</div>
+		</div>
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="https://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_10058" charset="utf-8"></script>
+		<script src="js/publicMB.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/PayPageMB.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

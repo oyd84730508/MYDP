@@ -1,0 +1,283 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+input{
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.invoice_list{
+	padding-bottom: 1rem;
+}
+.invoice_on_off{
+	padding: 0.2rem;
+	border-bottom: 0.02rem solid #eee;
+	color: #333;
+	font-size: 0.22rem;
+}
+.invoice_list strong{
+	float: left;
+}
+.invoice_on_off .OnOff{
+	float: right;
+}
+.invoice_on_off .OnOff label{
+	margin-left: 0.5rem;
+}
+.invoice_on_off .OnOff label input{
+	
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -0.04rem;
+	margin-right: 0.1rem;
+	height: 0.29rem;
+	width: 0.29rem;
+	background: url(../img/InvoiceMB/r_1.png) no-repeat center center;
+	background-size: 100%;
+}
+.invoice_on_off .OnOff label input:checked{
+	
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -0.04rem;
+	margin-right: 0.1rem;
+	height: 0.29rem;
+	width: 0.29rem;
+	background: url(../img/InvoiceMB/r_2.png) no-repeat center center;
+	background-size: 100%;
+}
+.invoice_type{
+	margin: 0 0.2rem;
+}
+.invoice_type_tit{
+	
+	border-bottom: 0.02rem solid #eee;
+	padding: 0.4rem 0 0.15rem;
+	
+}
+.invoice_type_tit strong{
+	font-size: 0.22rem;
+	/*font-weight: bold;*/
+	color: #333;
+}
+.invoice_type_tit span{
+	display: block;
+	/*padding-right: 0.3rem;*/
+	margin-top: 0.03rem;
+	
+	color: #666;
+}
+.invoice_type_tit span i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 0.4rem;
+	height: 0.2rem;
+	background: url(../img/InvoiceMB/down.png) no-repeat center center;
+	background-size: 0.2rem 0.1rem;
+	/*transform: rotate(180deg);*/
+}
+.toggleHidden{
+	display: none;
+}
+
+.invoice_type ul li{
+	border-bottom: 0.02rem solid #eee;
+	padding: 0.2rem 0;
+}
+.invoice_type ul li h3{
+	font-size: 0.22rem;
+	color: #666;
+	font-weight: normal;
+	padding-left: 0.2rem;
+}
+
+.invoice_type ul li h3 label input{
+	
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -0.04rem;
+	margin-right: 0.1rem;
+	height: 0.29rem;
+	width: 0.29rem;
+	background: url(../img/InvoiceMB/r_1.png) no-repeat center center;
+	background-size: 100%;
+}
+.invoice_type ul li h3 label i{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -0.04rem;
+	margin-right: 0.1rem;
+	height: 0.29rem;
+	width: 0.29rem;
+	text-align: center;
+	color: #FE002C;
+}
+.invoice_type ul li h3 label input:checked{
+	
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -0.05rem;
+	margin-right: 0.1rem;
+	height: 0.29rem;
+	width: 0.29rem;
+	background: url(../img/InvoiceMB/r_2.png) no-repeat center center;
+	background-size: 100%;
+}
+.invoice_type ul li p{
+	color: #999;
+	margin-top: 0.05rem;
+	line-height: 0.28rem;
+	max-height: 0.56rem;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	padding-left: 0.6rem;
+}
+.invoice_type_titBox ul li{
+	border-bottom: 0.02rem solid #eee;
+	padding: 0.15rem 0;
+}
+.invoice_type_titBox ul li h3 label{
+	display: inline-block;
+	width: 1.4rem;
+	font-size: 0.2rem;
+}
+.invoice_type_titBox ul li h3 input[type=text]{
+	background: #F6F6F6;
+    outline: none;
+    border: none;
+    height: 0.44rem;
+    line-height: 0.46rem;
+    width: 4.2rem;
+    border-radius: 0.05rem;
+    text-indent: 0.15rem;
+}
+.invoice_type  ul.taker-info li{
+	padding: 0.15rem 0.2rem;
+	font-size: 0.2rem;
+	color: #666;
+}
+.invoice_type  ul.taker-info li label{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+	width: 1.2rem;
+	/*text-align: right;*/
+}
+.invoice_type  ul.taker-info li input{
+	background: #F6F6F6;
+	outline: none;
+	border: none;
+	height: 0.44rem;
+	line-height: 0.46rem;
+	width: 4.2rem;
+	border-radius: 0.05rem;
+	text-indent: 0.15rem;
+}
+
+.invoice_type  ul.taker-info li.taker-ic label{
+	width: 1.2rem;
+	/*text-align: right;*/
+	position: relative;
+}
+.invoice_type  ul.taker-info li.taker-ic label:before{
+	position: absolute;
+	top: 0;
+	left: -0.15rem;
+	content: "*";
+	color: #FE002C;
+	
+}
+#distpicker1{
+	display: inline-block;
+	vertical-align: middle;
+}
+#distpicker1 select {
+	box-sizing: border-box;
+	border: none;
+	font-size: 0.2rem;
+	font-family: simhei;
+	color: #666;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: #F6F6F6;
+	border-radius: 0.05rem;
+}
+#distpicker1 select option{
+	color: #817D7E;
+}
+#distpicker1 select::-webkit-input-placeholder{color:#999;}
+#distpicker1 select:-moz-placeholder{color:#999;}
+#distpicker1 select::-moz-placeholder{color:#999;}
+#distpicker1 select:-ms-input-placeholder{color:#999;}
+.form-group{
+	display: inline-block;
+	vertical-align: middle;
+}
+/*省*/
+#province1 {
+    width: 1.32rem;
+    height: 0.4rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-indent: 0.1rem;
+    background: #01A1FF;
+    color: #666;
+    font-size: 0.2rem;
+}
+/*市*/
+#city1 {
+	width: 1.32rem;
+    height: 0.4rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap;
+	text-indent: 0.1rem;  
+	background: #01A1FF;
+	color: #666;
+	font-size: 0.2rem;
+}
+/* 区 */
+#district1 {
+	width: 1.32rem;
+    height: 0.4rem;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+	white-space: nowrap;
+	text-indent: 0.1rem;  
+	background: #01A1FF;
+	color: #666;
+	font-size: 0.2rem;
+}
+input.makeSureBtn{
+	position: fixed;
+    z-index: 101;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    background-color: #FF352F;
+    color: #fff;
+    font-size: 0.24rem;
+    letter-spacing: 0.1rem;
+}
+.onbill .invoice_type_tit strong{
+	color: #333;
+	font-weight: bold;
+}
+.offbill .invoice_type_tit strong{
+	color: #333;
+	font-weight: normal;
+}

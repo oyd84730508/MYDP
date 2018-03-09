@@ -1,0 +1,123 @@
+a {
+	-webkit-tap-highlight-color: transparent
+}
+
+body {
+	font-family: "microsoft yahei";
+}
+
+#mbBox {
+	min-width: 300px;
+	max-width: 640px;
+	height: 100%;
+	margin: 0 auto;
+}
+#head_MB{
+	background: #fff;
+	padding: 0.1rem 0;
+	border-bottom: 0.02rem solid #EEEEEE;
+	position: relative;
+}
+#head_MB .head_back {
+	position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 0.7rem;
+    text-align: center;
+    width: 0.7rem;
+    background: url(../img/publicMB/返回顶部@2x.png) no-repeat center center;
+    background-size: 0.16rem 0.3rem;
+}
+#head_MB .head-tit{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #333;
+}
+/*底部tabbar*/
+#mfooter {
+	position: fixed;
+	bottom: 0;
+	width: 6.4rem;
+	border-top: 1px solid #E5E5E5;
+	background: #fff;
+	z-index: 999;
+}
+
+.mfooter {
+	padding: 0 0.1rem;
+	display: flex;
+	-webkit-display: flex;
+}
+
+#mfooter a {
+	flex: 1;
+	text-align: center;
+	color: #5F5F5F;
+}
+
+#mfooter a p {
+	height: 0.32rem;
+	line-height: 0.32rem;
+	font-size: 0.20rem;
+}
+
+#mfooter a span {
+	display: block;
+	height: 0.5rem;
+	background-size: 28% !important;
+}
+
+#mfooter .m-i-f1 span {
+	background: url(../img/publicMB/mf-icon-home.png) no-repeat center center;
+}
+
+#mfooter .m-i-f2 span {
+	background: url(../img/publicMB/mf-icon-fl.png) no-repeat center center;
+}
+
+#mfooter .m-i-f3 span {
+	background: url(../img/publicMB/mf-icon-cart.png) no-repeat center center;
+}
+
+#mfooter .m-i-f4 span {
+	background: url(../img/publicMB/mf-icon-talk.png) no-repeat center center;
+}
+
+#mfooter .m-i-f5 span {
+	background: url(../img/publicMB/mf-icon-person.png) no-repeat center center;
+}
+
+#mfooter .m-i-f3 {
+	position: relative;
+}
+
+#mfooter .m-i-f3 i {
+	position: absolute;
+	top: 0;
+	right: 0.28rem;
+	background: #D6000F;
+	display: block;
+	font-size: 0.18rem;
+	width: 0.28rem;
+	height: 0.28rem;
+	line-height: 0.3rem;
+	color: #fff;
+	border-radius: 50%;
+}
+
+/*返回顶部*/
+
+.gotop {
+	position: fixed;
+	bottom: 2.2rem;
+	right: .2rem;
+	border-radius: 1.6rem;
+	width: .7rem;
+	height: .7rem;
+	background: url(../img/publicMB/backTop.png) center no-repeat #5C6167;
+	background-size: .3rem .35rem;
+	z-index: 50;
+}
